@@ -1,0 +1,217 @@
+---
+import HeaderLink from "../components/HeaderLink.astro";
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import Hero from "../components/hero/Hero.astro";
+import Carreras from "../components/Carreras.astro";
+import carreras from "../content/carrerasList.json";
+import Icon from "../components/Icons";
+import { getCollection } from "astro:content";
+import FormattedDate from "../components/FormattedDate.astro";
+const avisos = (await getCollection("blog"))
+  .filter((post) => post.data.category === "avisos")
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const noticias = (await getCollection("blog"))
+  .filter((post) => post.data.category === "noticias")
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const cloneNotices = [...noticias];
+cloneNotices.shift();
+const noticiasList = cloneNotices;
+function mezclarArreglo(arr: any) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+const carrerasRandom = mezclarArreglo([...carreras]); // Clonamos el arreglo para no modificar el original
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <Hero />
+    <main>
+      <section class="mx-auto pt-14 container">
+        <div class="text-center">
+          <h2>Avisos importantes</h2>
+          <p class="text-[18px]">
+            Avisos importantes para personal y estudiantes <b>UNEFM</b>
+          </p>
+          <ul class="gap-8 grid grid-cols-6 mt-12 w-full">
+            {
+              avisos.slice(0, 6).map((post) => (
+                <li class="flex flex-col justify-center bg-slate-200 p-4 rounded-md w-52">
+                  <a href={`/blog/${post.id}/`}>
+                    <h6 class="line-clamp-2">{post.data.title}</h6>
+                    <span class="date">
+                      <FormattedDate date={post.data.pubDate} />
+                    </span>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+        <div class="flex justify-center gap-8 mt-12">
+          <button class="w-40 btn-outline">Ver avisos</button>
+          <button class="w-40 btn-outline">Ver noticias</button>
+          <button class="w-40 btn-outline">Ver agenda</button>
+        </div>
+      </section>
+      <section>
+        <div
+          class="gap-24 grid grid-cols-1 md:grid-cols-2 mx-auto py-[5%] container"
+        >
+          <div class="flex flex-col justify-center h-full">
+            <h2>
+              Descubre las oportunidades que te esperan y da el primer paso
+              hacia un futuro brillante
+            </h2>
+            <p class="mt-4">
+              <p>
+                Ubicada en el corazón del <b>estado Falcón</b>, Venezuela,
+                nuestra universidad es un faro de excelencia académica y
+                profesional. Ofrecemos una <b>amplia gama de carreras</b> que incluyen
+                licenciaturas, ingenierías, medicina, y Técnico Superior Universitario
+                (T.S.U.) tanto en <b>pregrado como en postgrado.</b>
+              </p>
+
+              <p>
+                Nuestro compromiso es proporcionar una educación de calidad que
+                forme a los futuros líderes de nuestra región y del mundo. En la <b
+                  class="text-link">Universidad Pública</b
+                > de Coro, nos esforzamos por crear un ambiente inclusivo y estimulante,
+                donde cada estudiante pueda alcanzar su máximo potencial.
+              </p>
+            </p>
+            <!-- <div class="flex justify-between items-center mt-8">
+              <span class="font-bold">Lorem ipsum dolor</span>
+              <button class="btn">Probar ahora</button>
+            </div> -->
+          </div>
+          <div>
+            <img src="/homeSection1.png" alt="graduados" />
+          </div>
+        </div>
+      </section>
+      <section id="cursos" class="bg-slate-200 py-24">
+        <div class="mx-auto container">
+          <div class="mb-8 text-center">
+            <h2>Descubre las carreras que<br /> tenemos para ofrecerte</h2>
+          </div>
+          <div class="gap-4 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
+            {
+              carrerasRandom.slice(0, 8).map((item: any) => (
+                <Carreras
+                  title={item.carrera}
+                  nivel={item.nivel}
+                  curso={item.curso}
+                >
+                  <Icon name={item.icon} size={60} color={item.color} />
+                </Carreras>
+              ))
+            }
+          </div>
+          <!-- <div class="flex justify-center mt-8">
+            <button class="btn">
+              <span>Ver todas</span>
+              <AngleRigth color="#fff" width="15" stroke="3" />
+            </button>
+          </div> -->
+        </div>
+      </section>
+
+      <section id="noticias" class="py-24">
+        <div class="mx-auto container">
+          <div class="grid grid-cols-2 mb-16">
+            <div>
+              <h2 class="">Últimas noticias UNEFM</h2>
+              <span
+                >No te pierdas las ultimas noticias sobre la universidad, está<br
+                />
+                atento ante cualquier aviso o noticia relevante en nuestra página
+                web.</span
+              >
+            </div>
+            <div class="flex justify-end items-center">
+              <HeaderLink href="/blog">
+                <button class="btn-outline">Ver más noticias</button>
+              </HeaderLink>
+            </div>
+          </div>
+          <div class="gap-8 grid grid-cols-1 md:grid-cols-2">
+            <div
+              class="relative bg-slate-400 bg-center rounded-md h-[30rem] overflow-hidden"
+            >
+              <div
+                class="absolute inset-0 bg-cover transition-all duration-200 hover:scale-110"
+                style={{
+                  backgroundImage: `url(${noticias[0].data.heroImage})`,
+                }}
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black to-transparent"
+                >
+                  <div class="bottom-12 left-12 absolute w-[30rem]">
+                    <h4 class="text-white">{noticias[0].data.title}</h4>
+                    <p class="text-slate-200">{noticias[0].data.description}</p>
+                    <div class="mt-2">
+                      <span class="badge">
+                        <FormattedDate date={noticias[0].data.pubDate} />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="relative">
+              <ul class="flex flex-col justify-between gap-4 h-full">
+                {
+                  noticiasList.slice(0, 3).map((post) => (
+                    <li class="">
+                      <a class="bg-red-300" href={`/blog/${post.id}/`}>
+                        <div class="flex gap-4">
+                          <div class="relative bg-slate-400 bg-center rounded-md w-[35%] h-[150px] overflow-hidden">
+                            <div
+                              class="absolute inset-0 bg-cover transition-transform duration-200 hover:scale-110"
+                              style={{
+                                backgroundImage: `url(${post.data.heroImage})`,
+                              }}
+                            />
+                          </div>
+                          <div class="flex flex-col justify-center w-[70%]">
+                            <h6 class="line-clamp-2">{post.data.title}</h6>
+                            <span class="line-clamp-2">
+                              {post.data.description}
+                            </span>
+                            <div class="mt-2">
+                              <span class="badge">
+                                <FormattedDate date={post.data.pubDate} />
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>

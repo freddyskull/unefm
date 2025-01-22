@@ -1,0 +1,78 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE, socialMedia } from "../consts";
+import InstagramIcon from "../icons/InstagramIcon.astro";
+import FacebookIcon from "../icons/FacebookIcon.astro";
+import TwitterIcon from "../icons/TwitterIcon.astro";
+---
+
+<header>
+  <div class="bg-link clip-header p-1 w-full text-primary-foreground">
+    <div class="grid grid-cols-2 mx-auto h-full container">
+      <div class="flex items-center gap-4">
+        <span class="md:block hidden text-[10px] uppercase">
+          Calle norte, entra Av. Manaure y calle Toledo
+        </span>
+        <span class="md:block hidden">|</span>
+        <span class="text-[10px] uppercase">
+          Lunes a jueves 8:00 AM - 12:00 PM
+        </span>
+      </div>
+      <div class="text-right flex justify-end items-center gap-2 h-full">
+        <a
+          class="flex justify-center items-center bg-white rounded-full w-6 h-6"
+          href={socialMedia.instagrma}
+          target="_blank"
+        >
+          <InstagramIcon color="#163AA5" stroke="3" width="13" />
+        </a>
+        <a
+          class="flex justify-center items-center bg-white rounded-full w-6 h-6"
+          href={socialMedia.facebook}
+          target="_blank"
+        >
+          <FacebookIcon color="#163AA5" stroke="1" width="12" />
+        </a>
+        <a
+          class="flex justify-center items-center bg-white rounded-full w-6 h-6"
+          href={socialMedia.x}
+          target="_blank"
+        >
+          <TwitterIcon color="#163AA5" stroke="3" width="12" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="py-6 navbarShadow">
+    <div
+      class="md:flex justify-between items-center grid grid-cols-2 mx-auto container"
+    >
+      <div class="logo">
+        <a href="/">
+          <img src="/logo.png" class="w-32 md:w-[15rem]" alt={SITE_TITLE} />
+        </a>
+      </div>
+      <div class="flex items-center gap-4">
+        <nav class="md:flex gap-8 hidden">
+          <ul class="flex justify-end items-center gap-8 w-full uppercase">
+            <li>
+              <HeaderLink href="/">Inicio</HeaderLink>
+            </li>
+            <li>
+              <a href="http://estudiantes.unefm.edu.ve/" target="_blank"
+                >Control Estudiantil</a
+              >
+            </li>
+            <li>
+              <a href="http://nomina.unefm.edu.ve/" target="_blank">Nómina</a>
+            </li>
+            <li>
+              <HeaderLink href="/blog">noticias</HeaderLink>
+            </li>
+          </ul>
+          <button class="btn">Ofertas académicas </button>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>

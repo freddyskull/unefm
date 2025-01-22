@@ -1,0 +1,137 @@
+---
+import { SITE_TITLE, socialMedia } from "../consts";
+import InstagramIcon from "../icons/InstagramIcon.astro";
+import FacebookIcon from "../icons/FacebookIcon.astro";
+import TwitterIcon from "../icons/TwitterIcon.astro";
+---
+
+<div
+  class="bg-cover bg-center pt-24"
+  style={{
+    backgroundImage: `url('/footer2.png')`,
+  }}
+>
+  <div class="mx-auto container">
+    <div class="flex sm:flex-row flex-col">
+      <div class="sm:w-[30%]">
+        <div class="flex flex-col items-center md:items-start logo">
+          <a href="/">
+            <img src="/logoInverse.png" class="w-[15rem]" alt={SITE_TITLE} />
+          </a>
+          <div
+            class="text-right sm:flex items-center gap-2 hidden mt-12 h-full"
+          >
+            <a
+              class="flex justify-center items-center border-2 border-white rounded-full w-8 h-8"
+              href={socialMedia.instagrma}
+              target="_blank"
+            >
+              <InstagramIcon color="#FFF" stroke="3" width="17" />
+            </a>
+            <a
+              class="flex justify-center items-center border-2 border-white rounded-full w-8 h-8"
+              href={socialMedia.facebook}
+              target="_blank"
+            >
+              <FacebookIcon color="#fff" stroke="1" width="18" />
+            </a>
+            <a
+              class="flex justify-center items-center border-2 border-white rounded-full w-8 h-8"
+              href={socialMedia.x}
+              target="_blank"
+            >
+              <TwitterIcon color="#fff" stroke="3" width="18" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="sm:block flex justify-center sm:w-[40%]">
+        <div
+          class="gap-12 sm:gap-2 grid grid-cols-1 sm:grid-cols-3 mt-12 sm:mt-0"
+        >
+          <ul class="flex flex-col gap-3 text-white uppercase footer-list">
+            <li>
+              <h6 class="text-white uppercase">LINK PRINCIPALES</h6>
+            </li>
+            <li>
+              <a href="/">Inicio</a>
+            </li>
+            <li>
+              <a href="/">Sobre nosotros</a>
+            </li>
+            <li>
+              <a href="/">Contacto</a>
+            </li>
+            <li>
+              <a href="/">Misión y visión</a>
+            </li>
+          </ul>
+          <ul class="flex flex-col gap-3 text-white uppercase footer-list">
+            <li>
+              <h6 class="text-white uppercase">Intranet</h6>
+            </li>
+            <li>
+              <a href="https://mundoadi.net/pregrado/" target="_blank">ADI</a>
+            </li>
+            <li>
+              <a href="http://nomina.unefm.edu.ve/" target="_blank">Nómina</a>
+            </li>
+            <li>
+              <a href="https://unefm.net/editorial/" target="_blank"
+                >Fondo editorial</a
+              >
+            </li>
+            <li>
+              <a href="http://estudiantes.unefm.edu.ve/" target="_blank"
+                >Control de estudios</a
+              >
+            </li>
+          </ul>
+          <ul class="flex flex-col gap-3 text-white uppercase footer-list">
+            <li>
+              <h6 class="text-white uppercase">Intranet</h6>
+            </li>
+            <li>
+              <a href="https://mundoadi.net/pregrado/" target="_blank">ADI</a>
+            </li>
+            <li>
+              <a href="http://nomina.unefm.edu.ve/" target="_blank">Nómina</a>
+            </li>
+            <li>
+              <a href="https://unefm.net/editorial/" target="_blank"
+                >Fondo editorial</a
+              >
+            </li>
+            <li>
+              <a href="http://estudiantes.unefm.edu.ve/" target="_blank"
+                >Control de estudios</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sm:block hidden sm:w-[30%] text-white">
+        <h5 class="text-white">Lorem ipsum dolor sit amet, consectetur</h5>
+        <p class="mt-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+          tempora quas a at eos. Esse magni autem maxime, impedit consequatur
+          molestiae reprehenderit nobis nihil quaerat, amet rerum corporis animi
+          culpa.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="border-[#ffffff1e] mt-12 py-1 border-t-2">
+    <div class="mx-auto container">
+      <div class="grid grid-cols-1 sm:grid-cols-2">
+        <div class="sm:flex items-center hidden text-[13px] text-white">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
+          accusantium ratione
+        </div>
+        <div class="flex justify-center sm:justify-end items-center">
+          <img src="./ministerio.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

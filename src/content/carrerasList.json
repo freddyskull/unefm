@@ -1,0 +1,517 @@
+[
+  {
+    "carrera": "Enfermería",
+    "nivel": "Técnico Superior",
+    "curso": "pregrado",
+    "icon": "Cross",
+    "area": "ciecias de la salud",
+    "color": "#f44336",
+    "ubicacion": [
+      "Anexo Van Griecken",
+      "Unidad Académica Churuguara",
+      "Municipios: Carirubana, Silva, Urumaco, Dabajuro, Petit, Bolivar, Unión, Falcón",
+      "Edo. Cojedes"
+    ]
+  },
+  {
+    "carrera": "Medicina",
+    "nivel": "Licenciatura",
+    "curso": "pregrado",
+    "icon": "Hospital",
+    "area": "ciecias de la salud",
+    "color": "#e91e63",
+    "ubicacion": [
+      "Edif. Santa Ana",
+      "Anexo Van Griecken",
+      "Municipios: Petit, San Francisco, Monseñor Iturriza, Silva, Democracia, Federación, Carirubana, Dabajuro"
+    ]
+  },
+  {
+    "carrera": "Gerontología",
+    "nivel": "T.S.U. | Licenciatura",
+    "curso": "pregrado",
+    "icon": "Tablets",
+    "area": "ciecias de la salud",
+    "color": "#9c27b0",
+    "ubicacion": [
+      "Los Borregales",
+      "Municipio Dabajuro"
+    ]
+  },
+  {
+    "carrera": "Ingeniería Biomédica",
+    "nivel": "T.S.U. | Licenciatura",
+    "curso": "pregrado",
+    "icon": "Computer",
+    "area": "ciecias de la salud",
+    "color": "#3f51b5",
+    "ubicacion": [
+      "Edif. Santa Ana",
+      "Van Griecken",
+      "Maracay Edo. Aragua"
+    ]
+  },
+  {
+    "carrera": "PNF en Medicina Integral Comunitaria",
+    "nivel": "Licenciatura",
+    "icon": "ClipboardPlus",
+    "curso": "pregrado",
+    "area": "ciecias de la salud",
+    "color": "#673ab7",
+    "ubicacion": [
+      "Calle Norte, entre Av. Manaure y Calle Toledo",
+      "Municipios: Mauroa, Colina, Petit, San Francisco, Monseñor Iturriza, Silva, Democracia, Federación, Carirubana, Dabajuro"
+    ]
+  },
+  {
+    "carrera": "PNF en Enfermería Integral Comunitaria",
+    "nivel": "Licenciatura",
+    "curso": "pregrado",
+    "icon": "Accessibility",
+    "area": "ciecias de la salud",
+    "color": "#2196f3",
+    "ubicacion": [
+      "Municipio Miranda",
+      "Municipio Mauroa",
+      "Silva"
+    ]
+  },
+  {
+    "carrera": "PNF en Fisioterapia",
+    "nivel": "Licenciatura",
+    "curso": "pregrado",
+    "icon": "Bone",
+    "area": "ciecias de la salud",
+    "color": "#9c27b0",
+    "ubicacion": [
+      "Municipio Miranda",
+      "Zamora Falcón",
+      "Colina",
+      "Morón"
+    ]
+  },
+  {
+    "carrera": "PNF en Terapia Ocupacional",
+    "nivel": "Licenciatura",
+    "curso": "pregrado",
+    "icon": "AccessibilityIcon",
+    "area": "ciecias de la salud",
+    "color": "#cddc39",
+    "ubicacion": [
+      "Municipio Miranda"
+    ]
+  },
+  {
+    "carrera": "PNF en Fonoaudiología",
+    "nivel": "Licenciatura",
+    "curso": "pregrado",
+    "icon": "Ear",
+    "area": "ciecias de la salud",
+    "color": "#00bcd4",
+    "ubicacion": [
+      "Municipio Miranda"
+    ]
+  },
+  {
+    "carrera": "PNF en Nutrición y Dietética",
+    "nivel": "Licenciatura",
+    "curso": "pregrado",
+    "icon": "Salad",
+    "area": "ciecias de la salud",
+    "color": "#afb42b",
+    "ubicacion": [
+      "Municipio Miranda"
+    ]
+  },
+  {
+    "carrera": "PNF en Histocitotecnología",
+    "nivel": "Licenciatura",
+    "curso": "pregrado",
+    "icon": "Microscope",
+    "area": "ciecias de la salud",
+    "color": "#795548",
+    "ubicacion": [
+      "Municipio Miranda"
+    ]
+  },
+  {
+    "carrera": "Ingeniería Civil",
+    "nivel": "Licenciatura",
+    "curso": "pregrado",
+    "icon": "HardHat",
+    "area": "tecnología",
+    "color": "#4caf50",
+    "ubicacion": [
+      "C.A. Los Perozo",
+      "Municipios: Tocópero, Bolivar, Urumaco, Dabajuro, Mene Mauroa, Colina, Petit, San Francisco, Monseñor Iturriza, Democracia, Bolívar, Silva, Carirubana, Zamora, Morón, Unión, Miranda, Federación, Piritu, Puerto Cabello, Manuel Monge, Urachiche, Iribarren, Veroes"
+    ]
+  },
+  {
+    "carrera": "Ingeniería Mecánica",
+    "nivel": "Licenciatura",
+    "curso": "pregrado",
+    "icon": "Wrench",
+    "area": "tecnología",
+    "color": "#9e9e9e",
+    "ubicacion": [
+      "C.A. El Sabino",
+      "Municipios: Tocópero, Dabajuro, Mene Mauroa, Carirubana, Zamora, Morón, Unión, Federación, Democracia, Veroes, Manuel Monge, Urachiche, Iribarren, Urumaco"
+    ]
+  },
+  {
+    "carrera": "Ingeniería Industrial",
+    "nivel": "Licenciatura",
+    "curso": "pregrado",
+    "icon": "Factory",
+    "area": "tecnología",
+    "color": "#64dd17",
+    "ubicacion": [
+      "C.A. El Sabino",
+      "Municipios: Tocópero, Dabajuro, Silva, Zamora, Federación, Carirubana, Falcón, Unión, Mene Mauroa, Morón, Veroes, Manuel Monge, Urachiche, Iribarren, Puerto Cabello"
+    ]
+  },
+  {
+    "carrera": "Ingeniería Química",
+    "nivel": "Licenciatura",
+    "curso": "pregrado",
+    "icon": "FlaskConical",
+    "area": "tecnología",
+    "color": "#3d5afe",
+    "ubicacion": [
+      "C.A. El Sabino",
+      "Municipios: Falcón, Morón"
+    ]
+  },
+  {
+    "carrera": "Ingeniería Pesquera",
+    "nivel": "Licenciatura",
+    "curso": "pregrado",
+    "icon": "FishSymbol",
+    "area": "tecnología",
+    "color": "#ff9800",
+    "ubicacion": [
+      "Complejo Académico El Sabino"
+    ]
+  },
+  {
+    "carrera": "Ciencias Ambientales",
+    "nivel": "Licenciatura",
+    "curso": "pregrado",
+    "icon": "Trees",
+    "area": "tecnología",
+    "color": "#ff5722",
+    "ubicacion": [
+      "C.A. Los Perozo",
+      "Municipio Petit"
+    ]
+  },
+  {
+    "carrera": "Ingeniería Agronómica",
+    "nivel": "Licenciatura",
+    "curso": "pregrado",
+    "icon": "Truck",
+    "area": "ciencias del agro y mar",
+    "color": "#212121",
+    "ubicacion": [
+      "C.A. Ing. Rodolfo J. Bastidas",
+      "Municipios: San Francisco, Democracia, Federación, Dabajuro, Urumaco, Zamora, Mene Mauroa, Morón, Urachiche, Veroes, Bolívar"
+    ]
+  },
+  {
+    "carrera": "Medicina Veterinaria",
+    "nivel": "Licenciatura",
+    "curso": "pregrado",
+    "icon": "PawPrint",
+    "area": "ciencias del agro y mar",
+    "color": "#795548",
+    "ubicacion": [
+      "C.A. Ing. Rodolfo J. Bastidas",
+      "Municipios: Dabajuro, Mene Mauroa, San Francisco, Democracia, Bolívar, Zamora, Morón, Unión, Iribarren, Federación, Falcón, Urachiche, Veroes, Tocópero, Manuel Monge, Morón"
+    ]
+  },
+  {
+    "carrera": "Agropecuaria",
+    "nivel": "Licenciatura",
+    "curso": "pregrado",
+    "icon": "Apple",
+    "area": "educación",
+    "color": "#607d8b",
+    "ubicacion": [
+      "Unidad Acad. Churuguara",
+      "Municipios: Mene Mauroa, Tocópero"
+    ]
+  },
+  {
+    "carrera": "Lenguas Extranjeras (Inglés)",
+    "nivel": "Licenciatura",
+    "curso": "pregrado",
+    "icon": "Book",
+    "area": "educación",
+    "color": "#64dd17",
+    "ubicacion": [
+      "C.A. Los Perozo",
+      "Municipios: Mauroa, Dabajuro, Urumaco, Carirubana, San Francisco, Tocópero, Morón"
+    ]
+  },
+  {
+    "carrera": "Lengua, Literatura y Latín",
+    "nivel": "Licenciatura",
+    "curso": "pregrado",
+    "icon": "BookOpen",
+    "area": "educación",
+    "color": "#9c27b0 ",
+    "ubicacion": [
+      "C.A. Los Perozo",
+      "C.A. Marino Colina",
+      "Unidad Académica Churuguara",
+      "Municipios: San Francisco, Dabajuro, Urumaco, Silva, Morón"
+    ]
+  },
+  {
+    "carrera": "Matemática (Informática)",
+    "nivel": "Licenciatura",
+    "curso": "pregrado",
+    "icon": "ListOrdered",
+    "area": "educación",
+    "color": "#e91e63",
+    "ubicacion": [
+      "Coro",
+      "C.A. Marino Colina",
+      "Unidad Académica Churuguara",
+      "Municipios: Tocópero, Urumaco, Falcón, Silva, San Francisco, Piritu, Unión"
+    ]
+  },
+  {
+    "carrera": "Cs. Sociales mención: Turismo",
+    "nivel": "Licenciatura",
+    "curso": "pregrado",
+    "icon": "Plane",
+    "area": "educación",
+    "color": "#880e4f",
+    "ubicacion": [
+      "C.A. Los Perozo",
+      "Unidad Académica Churuguara",
+      "C.A. Marino Colina",
+      "Municipios: Petit, Carirubana, Silva, San Francisco, Piritu, Tocópero, Colina, Sucre, Morón"
+    ]
+  },
+  {
+    "carrera": "Educación. Física, Recreación y Entrenamiento Deportivo",
+    "nivel": "Licenciatura",
+    "curso": "pregrado",
+    "icon": "BicepsFlexed",
+    "area": "educación",
+    "color": "#ff8a80",
+    "ubicacion": [
+      "C.A. Los Perozo",
+      "C.A. Marino Colina",
+      "Unidad Académica Churuguara",
+      "Punto Fijo",
+      "Municipios: Tocópero, Urumaco, Dabajuro, Mene Mauroa, Colina, Petit, Urachiche, San Francisco, Monseñor Iturriza, Carirubana, Falcón, Silva, Piritu, Zamora, Unión, Sucre, Puerto Cabello"
+    ]
+  },
+  {
+    "carrera": "Música",
+    "nivel": "Licenciatura",
+    "curso": "pregrado",
+    "icon": "Music",
+    "area": "educación",
+    "color": "#4a148c",
+    "ubicacion": [
+      "C.A. Los Perozo",
+      "Municipios: Dabajuro, Urumaco, Carirubana, Tocópero"
+    ]
+  },
+  {
+    "carrera": "Desarrollo Empresarial",
+    "nivel": "Licenciatura",
+    "curso": "pregrado",
+    "icon": "ChartCandlestick",
+    "area": "educación",
+    "color": "#311b92",
+    "ubicacion": [
+      "C.A. Los Perozos",
+      "C.A. Marino Colina",
+      "Municipios: Tocópero, Dabajuro, San Francisco, Monseñor Iturriza, Bolívar, Petit, Federación, Colina, Piritu, Crirubana, Morón, Urumaco, Democracia, Falcón, Silva, Zamora, Unión, Sucre"
+    ]
+  },
+  {
+    "carrera": "Conservación y Restauración de Bienes Muebles Culturales",
+    "nivel": "Licenciatura",
+    "curso": "pregrado",
+    "icon": "Sofa",
+    "area": "educación",
+    "color": "#283593",
+    "ubicacion": [
+      "C.A. Los Perozo"
+    ]
+  },
+  {
+    "carrera": "Artes Audiovisuales",
+    "nivel": "Técnico Superior",
+    "curso": "pregrado",
+    "icon": "Clapperboard",
+    "area": "educación",
+    "color": "#42a5f5",
+    "ubicacion": [
+      "C.A. Los Perozo"
+    ]
+  },
+  {
+    "carrera": "PNF en Historia",
+    "nivel": "Licenciatura",
+    "curso": "pregrado",
+    "icon": "History",
+    "area": "educación",
+    "color": "#7986cb",
+    "ubicacion": [
+      "C.A. Los Perozo"
+    ]
+  },
+  {
+    "carrera": "Medicina Interna",
+    "nivel": "Especialización",
+    "curso": "postgrado",
+    "icon": "Stethoscope",
+    "area": "ciencias de la salud",
+    "color": "#03a9f4",
+    "ubicacion": [
+      "Anexo Van Griecken",
+      "Santa Ana",
+      "Los Perozo",
+      "Ambulatorio San José"
+    ]
+  },
+  {
+    "carrera": "Pediatría y Puericultura",
+    "nivel": "Especialización",
+    "curso": "postgrado",
+    "icon": "Baby",
+    "area": "ciencias de la salud",
+    "color": "#00838f",
+    "ubicacion": [
+      "Anexo Van Griecken"
+    ]
+  },
+  {
+    "carrera": "Ginecología y Obstetricia",
+    "nivel": "Especialización",
+    "curso": "postgrado",
+    "icon": "BriefcaseMedical",
+    "area": "ciencias de la salud",
+    "color": "#00b8d4",
+    "ubicacion": [
+      "Anexo Van Griecken"
+    ]
+  },
+  {
+    "carrera": "Cirugía General",
+    "nivel": "Especialización",
+    "curso": "postgrado",
+    "icon": "Slice",
+    "area": "ciencias de la salud",
+    "color": "#43a047",
+    "ubicacion": [
+      "Anexo Van Griecken"
+    ]
+  },
+  {
+    "carrera": "Anestesiología",
+    "nivel": "Especialización",
+    "curso": "postgrado",
+    "icon": "Syringe",
+    "area": "ciencias de la salud",
+    "color": "#1de9b6",
+    "ubicacion": [
+      "Anexo Van Griecken"
+    ]
+  },
+  {
+    "carrera": "Medicina Familiar",
+    "nivel": "Especialización",
+    "curso": "postgrado",
+    "icon": "BriefcaseMedical",
+    "area": "ciencias de la salud",
+    "color": "#8bc34a",
+    "ubicacion": [
+      "Anexo Van Griecken"
+    ]
+  },
+  {
+    "carrera": "Cardiología",
+    "nivel": "Especialización",
+    "curso": "postgrado",
+    "icon": "Activity",
+    "area": "ciencias de la salud",
+    "color": "#9e9d24",
+    "ubicacion": [
+      "Anexo Van Griecken"
+    ]
+  },
+  {
+    "carrera": "Cirugía Pediátrica",
+    "nivel": "Especialización",
+    "curso": "postgrado",
+    "icon": "Baby",
+    "area": "ciencias de la salud",
+    "color": "#880e4f ",
+    "ubicacion": [
+      "Anexo Van Griecken"
+    ]
+  },
+  {
+    "carrera": "Neumonología",
+    "nivel": "Especialización",
+    "curso": "postgrado",
+    "icon": "BriefcaseMedical",
+    "area": "ciencias de la salud",
+    "color": "#4a148c",
+    "ubicacion": [
+      "Anexo Van Griecken"
+    ]
+  },
+  {
+    "carrera": "Neonatología",
+    "nivel": "Especialización",
+    "curso": "postgrado",
+    "icon": "Baby",
+    "area": "ciencias de la salud",
+    "color": "#f57f17",
+    "ubicacion": [
+      "Anexo Van Griecken"
+    ]
+  },
+  {
+    "carrera": "Micología",
+    "nivel": "Maestría",
+    "curso": "postgrado",
+    "icon": "UserSearch",
+    "area": "ciencias de la salud",
+    "color": "#e65100",
+    "ubicacion": [
+      "Anexo Van Griecken"
+    ]
+  },
+  {
+    "carrera": "Farmacología Sanitaria",
+    "nivel": "Maestría",
+    "curso": "postgrado",
+    "icon": "PillBottle",
+    "area": "ciencias de la salud",
+    "color": "#bf360c",
+    "ubicacion": [
+      "Anexo Van Griecken"
+    ]
+  },
+  {
+    "carrera": "Ingeniería Biomédica (Convenio Cuba-Venezuela)",
+    "nivel": "Maestría",
+    "curso": "postgrado",
+    "icon": "Computer",
+    "area": "ciencias de la salud",
+    "color": "#0d47a1",
+    "ubicacion": [
+      "C.A. Los Perozo"
+    ]
+  }
+]

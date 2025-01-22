@@ -1,0 +1,22 @@
+---
+const { title, nivel, curso } = Astro.props;
+---
+
+<div
+  class="flex flex-col justify-center items-center border-2 bg-white py-6 p-4 rounded-md transition-all hoverbox"
+>
+  <div class="opacity-50 my-4 mb-6">
+    <slot />
+  </div>
+  <div class="w-full text-center">
+    <h6
+      class="line-clamp-2 text-slate-600 text-sm md:text-xl 2xl:text-2xl uppercase"
+    >
+      {title}
+    </h6>
+    <div class="flex justify-between mt-4 text-sm">
+      <span><b>Nivel:</b> {nivel}</span>
+      <span><b>Curso:</b> {curso}</span>
+    </div>
+  </div>
+</div>

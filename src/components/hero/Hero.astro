@@ -1,0 +1,49 @@
+---
+import AngleRigth from "../../icons/AngleRigth.astro";
+import Icon from "../Icons";
+import FeartureHero from "./FeartureHero.astro";
+---
+
+<section
+  id="hero"
+  class="bg-[url('/hero2.png')] bg-slate-400 bg-cover bg-center h-[85vh]"
+>
+  <div
+    class="flex flex-col justify-center items-center md:items-start mx-auto h-full text-white container"
+  >
+    <div class="md:w-[700px] text-center md:text-left">
+      <h4
+        class="mb-4 font-bold text-[15px] text-slate-300 md:text-[1.5rem] uppercase"
+      >
+        Formamos tu futuro
+      </h4>
+      <h1 class="font-bold text-[30px] text-white sm:text-[4rem] leading-tight">
+        BIENVENIDO A TU <br /> UNIVERSIDAD
+      </h1>
+    </div>
+    <div>
+      <button class="flex items-center gap-1 mt-4 btn">
+        <span>Saber más</span>
+        <AngleRigth color="#fff" width="20" stroke="3" />
+      </button>
+    </div>
+    <div class="gap-4 hidden md:grid grid-cols-3 mt-24 w-full">
+      <FeartureHero
+        title="Prensa UNEFM"
+        description="No te pierdas ningúna de las noticias"
+        ><Icon name="Newspaper" color="#4169E1" size={40} /></FeartureHero
+      >
+      <FeartureHero
+        title="Revistas UNEFM"
+        description="Sé el primero en leer el nuevo volúmen"
+      >
+        <Icon name="BookOpenText" color="#4169E1" size={40} />
+      </FeartureHero>
+      <FeartureHero
+        title="Gacetas UNEFM"
+        description="No te pierdas ningúna de las noticias"
+        ><Icon name="BookMarked" color="#4169E1" size={40} /></FeartureHero
+      >
+    </div>
+  </div>
+</section>
