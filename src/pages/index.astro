@@ -50,9 +50,9 @@ const carrerasRandom = mezclarArreglo([...carreras]); // Clonamos el arreglo par
           <ul class="gap-8 grid grid-cols-2 md:grid-cols-6 mt-12 w-full">
             {
               avisos.slice(0, 6).map((post) => (
-                <li class="flex flex-col justify-center bg-slate-200 p-4 rounded-md w-52">
+                <li class="flex flex-col justify-center bg-slate-200 p-4 rounded-md md:w-52">
                   <a href={`/blog/${post.id}/`}>
-                    <h6 class="line-clamp-2">{post.data.title}</h6>
+                    <h6 class="line-clamp-2 text-[15px]">{post.data.title}</h6>
                     <span class="date">
                       <FormattedDate date={post.data.pubDate} />
                     </span>
