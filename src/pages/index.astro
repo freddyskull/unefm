@@ -46,7 +46,10 @@ const carrerasRandom = mezclarArreglo([...carreras]);
     border-color: var(--primary);
   }
 </style>
-<Layout>
+<Layout
+  title="UNEFM | Universidad nacional experimental Francisco de miranda"
+  description="Universidad nacional experimental Francisco de miranda"
+>
   <Hero />
   <main>
     <section id="avisos" class="mx-auto pt-14 container">
@@ -75,7 +78,7 @@ const carrerasRandom = mezclarArreglo([...carreras]);
                     <span
                       class={
                         aviso.data.interesados
-                          ? "bg-slate-300 px-3 py-1 rounded-full text-xs date line-clamp-1"
+                          ? "bg-slate-300 px-3 py-1 rounded-full text-xs date line-clamp-1 max-w-24"
                           : "hidden"
                       }
                     >
@@ -135,7 +138,7 @@ const carrerasRandom = mezclarArreglo([...carreras]);
       </div>
     </section>
 
-    <section id="cursos" class="bg-slate-200 py-24">
+    <section id="cursos" class="bg-[#eeeeee] py-24">
       <div class="mx-auto container">
         <div class="mb-8 text-center">
           <h2>Descubre las carreras que<br /> tenemos para ofrecerte</h2>
@@ -261,26 +264,27 @@ const carrerasRandom = mezclarArreglo([...carreras]);
           <div class="relative">
             <ul class="flex flex-col justify-between gap-4 h-full">
               {
-                noticiasList.slice(0, 3).map((post) => (
+                noticiasList.slice(0, 3).map((noticia) => (
                   <li class="">
-                    <a class="bg-red-300" href={`/noticias/${post.id}/`}>
+                    <a class="bg-red-300" href={`/noticias/${noticia.id}/`}>
                       <div class="flex gap-4">
                         <div class="relative bg-slate-400 bg-center rounded-md w-[35%] h-[150px] overflow-hidden">
                           <div
+                            transition:name={`hero-${noticia.data.title}`}
                             class="absolute inset-0 bg-cover transition-transform duration-200 hover:scale-110"
                             style={{
-                              backgroundImage: `url(${post.data.heroImage})`,
+                              backgroundImage: `url(${noticia.data.heroImage})`,
                             }}
                           />
                         </div>
                         <div class="flex flex-col justify-center w-[70%]">
-                          <h6 class="line-clamp-2">{post.data.title}</h6>
+                          <h6 class="line-clamp-2">{noticia.data.title}</h6>
                           <span class="line-clamp-2">
-                            {post.data.description}
+                            {noticia.data.description}
                           </span>
                           <div class="mt-2">
                             <span class="badge">
-                              <FormattedDate date={post.data.pubDate} />
+                              <FormattedDate date={noticia.data.pubDate} />
                             </span>
                           </div>
                         </div>

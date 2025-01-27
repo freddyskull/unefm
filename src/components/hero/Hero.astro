@@ -22,28 +22,36 @@ import FeartureHero from "./FeartureHero.astro";
       </h1>
     </div>
     <div>
-      <button class="flex items-center gap-1 mt-4 btn">
-        <span>Saber más</span>
-        <AngleRigth color="#fff" width="20" stroke="3" />
-      </button>
+      <a href="#info">
+        <button class="flex items-center gap-1 mt-4 btn">
+          <span>Saber más</span>
+          <AngleRigth color="#fff" width="20" stroke="3" />
+        </button>
+      </a>
     </div>
     <div class="gap-4 hidden md:grid grid-cols-3 mt-24 w-full">
-      <FeartureHero
-        title="Prensa UNEFM"
-        description="No te pierdas ningúna de las noticias"
-        ><Icon name="Newspaper" color="#4169E1" size={40} /></FeartureHero
-      >
-      <FeartureHero
-        title="Revistas UNEFM"
-        description="Sé el primero en leer el nuevo volúmen"
-      >
-        <Icon name="BookOpenText" color="#4169E1" size={40} />
-      </FeartureHero>
-      <FeartureHero
-        title="Gacetas UNEFM"
-        description="No te pierdas ningúna de las noticias"
-        ><Icon name="BookMarked" color="#4169E1" size={40} /></FeartureHero
-      >
+      <a href="#noticias">
+        <FeartureHero
+          title="Prensa UNEFM"
+          description="No te pierdas ningúna de las noticias"
+          ><Icon name="Newspaper" color="#4169E1" size={40} /></FeartureHero
+        >
+      </a>
+      <a href="#avisos">
+        <FeartureHero
+          title="Avisos UNEFM"
+          description="Avisos importantes para la comunidad"
+        >
+          <Icon name="MessageCircleWarning" color="#4169E1" size={40} />
+        </FeartureHero>
+      </a>
+      <a href="#cursos">
+        <FeartureHero
+          title="Carreras disponibles"
+          description="Inicia tu futuro universitario con nosotros"
+          ><Icon name="GraduationCap" color="#4169E1" size={40} /></FeartureHero
+        >
+      </a>
     </div>
   </div>
 </section>

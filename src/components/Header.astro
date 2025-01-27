@@ -45,13 +45,17 @@ import TwitterIcon from "../icons/TwitterIcon.astro";
       </div>
     </div>
   </div>
-  <div class="py-6 navbarShadow">
+  <div class="top-0 z-50 sticky py-6 navbarShadow">
     <div
       class="md:flex justify-between items-center grid grid-cols-2 mx-auto container"
     >
       <div class="logo">
         <a href="/">
-          <img src="/logo.png" class="md:w-[15rem] max-w-48" alt={SITE_TITLE} />
+          <img
+            src="/logo.png"
+            class="md:w-[15rem] max-w-48 transition-all hover:scale-110"
+            alt={SITE_TITLE}
+          />
         </a>
       </div>
       <div class="flex items-center gap-4">

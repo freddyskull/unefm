@@ -95,19 +95,20 @@ const avisos = (await getCollection("avisos")).sort(
       <section>
         <ul>
           {
-            avisos.map((post) => (
+            avisos.map((carrera) => (
               <li>
-                <a href={`/avisos/${post.id}/`}>
+                <a href={`/avisos/${carrera.id}/`}>
                   <img
                     width={720}
                     height={360}
-                    src={post.data.heroImage}
-                    alt={post.data.title}
+                    src={carrera.data.heroImage}
+                    alt={carrera.data.title}
+                    transition:name={`hero-${carrera.data.title}`}
                   />
-                  <h4 class="title">{post.data.title}</h4>
-                  <p class="mt-2 line-clamp-3">{post.data.description}</p>
+                  <h4 class="title">{carrera.data.title}</h4>
+                  <p class="mt-2 line-clamp-3">{carrera.data.description}</p>
                   <p class="date">
-                    <FormattedDate date={post.data.pubDate} />
+                    <FormattedDate date={carrera.data.pubDate} />
                   </p>
                 </a>
               </li>

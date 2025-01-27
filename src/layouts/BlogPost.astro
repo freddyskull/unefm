@@ -1,9 +1,7 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 import FormattedDate from "../components/FormattedDate.astro";
+import Layout from "./layout.astro";
 
 type Props = CollectionEntry<"noticias">["data"];
 
@@ -20,111 +18,112 @@ const {
 } = Astro.props;
 ---
 
-<html lang="en">
-  <head>
-    <BaseHead title={title} description={description} />
-    <style>
-      main {
-        margin: 0;
-        margin-bottom: 80px;
-      }
-      .hero-image {
-        display: flex;
-        justify-content: center;
-      }
-      .hero-image img {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
-        border-radius: 12px;
-        box-shadow: var(--box-shadow);
-      }
-      .prose {
-        width: 720px;
-        max-width: calc(100% - 2em);
-        margin: auto;
-        padding: 1em;
-        color: rgb(var(--gray-dark));
-      }
-      .title {
-        margin-bottom: 1em;
-        padding: 1em 0;
-        text-align: center;
-        line-height: 1;
-      }
-      .title h1 {
-        margin: 0 0 0.5em 0;
-      }
-      .date {
-        margin-bottom: 0.5em;
-        color: rgb(var(--gray));
-      }
-      .last-updated-on {
-        font-style: italic;
-      }
-      .heroimg {
-        max-width: 800px;
-      }
-    </style>
-  </head>
+<Layout title={title} description={description}>
+  <style>
+    main {
+      margin: 0;
+      margin-bottom: 80px;
+    }
+    .hero-image {
+      display: flex;
+      justify-content: center;
+    }
+    .hero-image img {
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+      border-radius: 12px;
+      box-shadow: var(--box-shadow);
+    }
+    .prose {
+      width: 720px;
+      max-width: calc(100% - 2em);
+      margin: auto;
+      padding: 1em;
+      color: rgb(var(--gray-dark));
+    }
+    .title {
+      margin-bottom: 1em;
+      padding: 1em 0;
+      text-align: center;
+      line-height: 1;
+    }
+    .title h1 {
+      margin: 0 0 0.5em 0;
+    }
+    .date {
+      margin-bottom: 0.5em;
+      color: rgb(var(--gray));
+    }
+    .last-updated-on {
+      font-style: italic;
+    }
+    .heroimg {
+      max-width: 800px;
+    }
+  </style>
 
-  <body>
-    <Header />
-    <main class="mt-4">
-      <article class="mt-12">
-        <div class="flex justify-center w-full hero-image">
-          {heroImage && <img class="heroimg" src={heroImage} alt={title} />}
-        </div>
-        <div class="prose">
-          <div class="title">
-            <div class="date">
-              <FormattedDate date={pubDate} />
-              {
-                updatedDate && (
-                  <div class="last-updated-on">
-                    Ultima vez actualizado <FormattedDate date={updatedDate} />
-                  </div>
-                )
-              }
-            </div>
-            <h1>{title}</h1>
-            <div class="xl:flex xl:justify-center gap-4 grid grid-cols-2">
-              {
-                autor && (
-                  <span class="flex justify-center gap-1 badge">
-                    <b>Autor:</b> <span class="line-clamp-1">{autor}</span>
-                  </span>
-                )
-              }
-              {
-                fotos && (
-                  <span class="flex justify-center gap-1 badge">
-                    <b>fotos:</b> <span class="line-clamp-1">{fotos}</span>
-                  </span>
-                )
-              }
-              {
-                category && (
-                  <span class="flex justify-center gap-1 badge">
-                    <b>Categoría:</b>{" "}
-                    <span class="line-clamp-1">{category}</span>
-                  </span>
-                )
-              }
-              {
-                cnp && (
-                  <span class="flex justify-center gap-1 badge">
-                    <b>CNP:</b> <span class="line-clamp-1">{cnp}</span>
-                  </span>
-                )
-              }
-            </div>
-            <hr />
+  <main class="mt-4">
+    <article class="mt-12">
+      <div class="flex justify-center w-full hero-image">
+        {
+          heroImage && (
+            <img
+              class="heroimg"
+              transition:name={`hero-${title}`}
+              src={heroImage}
+              alt={title}
+            />
+          )
+        }
+      </div>
+      <div class="prose">
+        <div class="title">
+          <div class="date">
+            <FormattedDate date={pubDate} />
+            {
+              updatedDate && (
+                <div class="last-updated-on">
+                  Ultima vez actualizado <FormattedDate date={updatedDate} />
+                </div>
+              )
+            }
           </div>
-          <slot />
+          <h1 transition:name={`title-${title}`}>{title}</h1>
+          <div class="xl:flex xl:justify-center gap-4 grid grid-cols-2">
+            {
+              autor && (
+                <span class="flex justify-center gap-1 badge">
+                  <b>Autor:</b> <span class="line-clamp-1">{autor}</span>
+                </span>
+              )
+            }
+            {
+              fotos && (
+                <span class="flex justify-center gap-1 badge">
+                  <b>fotos:</b> <span class="line-clamp-1">{fotos}</span>
+                </span>
+              )
+            }
+            {
+              category && (
+                <span class="flex justify-center gap-1 badge">
+                  <b>Categoría:</b> <span class="line-clamp-1">{category}</span>
+                </span>
+              )
+            }
+            {
+              cnp && (
+                <span class="flex justify-center gap-1 badge">
+                  <b>CNP:</b> <span class="line-clamp-1">{cnp}</span>
+                </span>
+              )
+            }
+          </div>
+          <hr />
         </div>
-      </article>
-    </main>
-    <Footer />
-  </body>
-</html>
+        <slot />
+      </div>
+    </article>
+  </main>
+</Layout>
