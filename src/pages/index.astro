@@ -1,18 +1,12 @@
 ---
 import Layout from "../layouts/layout.astro";
 import HeaderLink from "../components/HeaderLink.astro";
-import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import Hero from "../components/hero/Hero.astro";
 import Carreras from "../components/Carreras.astro";
 import carreras from "../content/carrerasList.json";
 import Icon from "../components/Icons";
 import { getCollection } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
-import Picture from "astro/components/Picture.astro";
-import homeSection from "../../public/homeSection1.png";
 const avisos = (await getCollection("avisos")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
@@ -110,7 +104,7 @@ const carrerasRandom = mezclarArreglo([...carreras]);
             Descubre las oportunidades que te esperan y da el primer paso hacia
             un futuro brillante
           </h2>
-          <p class="mt-4">
+          <div class="mt-4">
             <p>
               Ubicada en el corazón del <b>estado Falcón</b>, Venezuela, nuestra
               universidad es un faro de excelencia académica y profesional.
@@ -126,14 +120,14 @@ const carrerasRandom = mezclarArreglo([...carreras]);
               > de Coro, nos esforzamos por crear un ambiente inclusivo y estimulante,
               donde cada estudiante pueda alcanzar su máximo potencial.
             </p>
-          </p>
+          </div>
           <!-- <div class="flex justify-between items-center mt-8">
               <span class="font-bold">Lorem ipsum dolor</span>
               <button class="btn">Probar ahora</button>
             </div> -->
         </div>
         <div>
-          <Picture src={homeSection} alt="graduados" />
+          <img src="/homeSection1.png" alt="graduados" />
         </div>
       </div>
     </section>
@@ -236,6 +230,7 @@ const carrerasRandom = mezclarArreglo([...carreras]);
             <a class="bg-red-300" href={`/noticias/${noticias[0].id}`}>
               <div
                 class="absolute inset-0 bg-cover transition-all duration-200 hover:scale-110"
+                transition:name={`hero-${noticias[0].data.title}`}
                 style={{
                   backgroundImage: `url(${noticias[0].data.heroImage})`,
                 }}
@@ -246,7 +241,9 @@ const carrerasRandom = mezclarArreglo([...carreras]);
                   <div
                     class="bottom-10 md:bottom-12 left-5 md:left-12 absolute mr-4 md:mr-0 2xl:w-[30rem]"
                   >
-                    <h4 class="text-white">{noticias[0].data.title}</h4>
+                    <h4 class="text-white">
+                      {noticias[0].data.title}
+                    </h4>
                     <p class="text-slate-200">
                       {noticias[0].data.description}
                     </p>
