@@ -5,9 +5,19 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import FormattedDate from "../components/FormattedDate.astro";
 
-type Props = CollectionEntry<"blog">["data"];
+type Props = CollectionEntry<"noticias">["data"];
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  heroImage,
+  autor,
+  category,
+  cnp,
+  fotos,
+} = Astro.props;
 ---
 
 <html lang="en">
@@ -52,6 +62,9 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
       .last-updated-on {
         font-style: italic;
       }
+      .heroimg {
+        max-width: 800px;
+      }
     </style>
   </head>
 
@@ -60,11 +73,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
     <main class="mt-4">
       <article class="mt-12">
         <div class="flex justify-center w-full hero-image">
-          {
-            heroImage && (
-              <img width={1020} height={510} src={heroImage} alt="" />
-            )
-          }
+          {heroImage && <img class="heroimg" src={heroImage} alt={title} />}
         </div>
         <div class="prose">
           <div class="title">
@@ -73,12 +82,43 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
               {
                 updatedDate && (
                   <div class="last-updated-on">
-                    Last updated on <FormattedDate date={updatedDate} />
+                    Ultima vez actualizado <FormattedDate date={updatedDate} />
                   </div>
                 )
               }
             </div>
             <h1>{title}</h1>
+            <div class="xl:flex xl:justify-center gap-4 grid grid-cols-2">
+              {
+                autor && (
+                  <span class="flex justify-center gap-1 badge">
+                    <b>Autor:</b> <span class="line-clamp-1">{autor}</span>
+                  </span>
+                )
+              }
+              {
+                fotos && (
+                  <span class="flex justify-center gap-1 badge">
+                    <b>fotos:</b> <span class="line-clamp-1">{fotos}</span>
+                  </span>
+                )
+              }
+              {
+                category && (
+                  <span class="flex justify-center gap-1 badge">
+                    <b>Categoría:</b>{" "}
+                    <span class="line-clamp-1">{category}</span>
+                  </span>
+                )
+              }
+              {
+                cnp && (
+                  <span class="flex justify-center gap-1 badge">
+                    <b>CNP:</b> <span class="line-clamp-1">{cnp}</span>
+                  </span>
+                )
+              }
+            </div>
             <hr />
           </div>
           <slot />

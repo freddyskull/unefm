@@ -1,6 +1,7 @@
 :root {
   --accent: #163aa5;
   --accent-dark: #000d8a;
+  --primary: #4169e1;
   --black: 15, 18, 25;
   --gray: 96, 115, 159;
   --gray-light: 229, 233, 240;
@@ -27,7 +28,7 @@ body {
   font-family: "Atkinson", sans-serif;
   margin: 0;
   padding: 0;
-  color: #6b6b6b;
+  color: #424242;
 }
 
 a {
@@ -42,7 +43,6 @@ h4,
 h5,
 h6 {
   margin: 0 0 0.5rem 0;
-  color: #363636;
   line-height: 1.2;
   font-weight: bold;
 }
@@ -162,6 +162,10 @@ hr {
   border: 2px solid #d4d4d4;
   text-transform: uppercase;
   transition: 0.2s;
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-outline:hover {

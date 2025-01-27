@@ -1,0 +1,41 @@
+---
+import Layout from "../layouts/layout.astro";
+---
+
+<style>
+  .main {
+    height: 70vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .main h5 {
+    color: #929292;
+    font-weight: 500;
+  }
+  .title {
+    color: #616161;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-size: 8rem;
+  }
+  .bg-white.rounded-md.text-center {
+    padding: 40px;
+  }
+</style>
+<Layout title="ERROR 404" description="la página que estás buscando no existe">
+  <div class="bg-slate-200 main">
+    <div class="bg-white shadow-xl rounded-md text-center">
+      <h1 class="title">404</h1>
+      <h2 class="uppercase">Parece que hubo un problema</h2>
+      <h5 class="mt-2 text-gray-100">
+        La página que estás buscando no existe o el enlace está roto.
+      </h5>
+
+      <div class="flex justify-center mt-8">
+        <a href="/"><button class="btn-outline">Volver al inicio</button></a>
+      </div>
+    </div>
+  </div>
+</Layout>
