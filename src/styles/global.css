@@ -144,6 +144,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 15px;
 }
 
 .hoverbox:hover {
@@ -159,6 +160,7 @@ hr {
 }
 .btn-outline {
   padding: 8px 15px;
+  font-size: 15px;
   border-radius: 10px;
   border: 2px solid #d4d4d4;
   text-transform: uppercase;

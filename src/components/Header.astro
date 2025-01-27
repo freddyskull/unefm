@@ -60,11 +60,13 @@ import TwitterIcon from "../icons/TwitterIcon.astro";
       </div>
       <div class="flex items-center gap-4">
         <nav class="xl:flex gap-8 hidden">
-          <ul class="flex justify-end items-center gap-8 w-full uppercase">
+          <ul
+            class="flex justify-end items-center gap-8 w-full uppercase links-nav"
+          >
             {
               menu.map((item) => (
                 <li>
-                  <HeaderLink href={item.link} class="hover:text-link">
+                  <HeaderLink href={item.link} class="text-md hover:text-link">
                     {item.title}
                   </HeaderLink>
                 </li>
