@@ -1,6 +1,6 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
-import { SITE_TITLE, socialMedia } from "../consts";
+import { SITE_TITLE, socialMedia, menu } from "../consts";
 import InstagramIcon from "../icons/InstagramIcon.astro";
 import FacebookIcon from "../icons/FacebookIcon.astro";
 import TwitterIcon from "../icons/TwitterIcon.astro";
@@ -51,28 +51,25 @@ import TwitterIcon from "../icons/TwitterIcon.astro";
     >
       <div class="logo">
         <a href="/">
-          <img src="/logo.png" class="w-32 md:w-[15rem]" alt={SITE_TITLE} />
+          <img src="/logo.png" class="md:w-[15rem] max-w-48" alt={SITE_TITLE} />
         </a>
       </div>
       <div class="flex items-center gap-4">
-        <nav class="md:flex gap-8 hidden">
+        <nav class="xl:flex gap-8 hidden">
           <ul class="flex justify-end items-center gap-8 w-full uppercase">
-            <li>
-              <HeaderLink href="/">Inicio</HeaderLink>
-            </li>
-            <li>
-              <a href="http://estudiantes.unefm.edu.ve/" target="_blank"
-                >Control Estudiantil</a
-              >
-            </li>
-            <li>
-              <a href="http://nomina.unefm.edu.ve/" target="_blank">Nómina</a>
-            </li>
-            <li>
-              <HeaderLink href="/blog">noticias</HeaderLink>
-            </li>
+            {
+              menu.map((item) => (
+                <li>
+                  <HeaderLink href={item.link} class="hover:text-link">
+                    {item.title}
+                  </HeaderLink>
+                </li>
+              ))
+            }
           </ul>
-          <button class="btn">Ofertas académicas </button>
+          <a href="/#cursos">
+            <button class="btn-outline">Ofertas académicas </button>
+          </a>
         </nav>
       </div>
     </div>
