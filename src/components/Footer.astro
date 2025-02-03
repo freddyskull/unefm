@@ -5,7 +5,7 @@ import FacebookIcon from "../icons/FacebookIcon.astro";
 import TwitterIcon from "../icons/TwitterIcon.astro";
 import Icon from "./Icons";
 import { getCollection } from "astro:content";
-const noticias = (await getCollection("noticias")).sort(
+const avisos = (await getCollection("avisos")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 ---
@@ -51,7 +51,9 @@ const noticias = (await getCollection("noticias")).sort(
         </div>
       </div>
       <div class="sm:block flex justify-center sm:w-[40%]">
-        <div class="flex gap-12 sm:gap-8 sm:grid-cols-3 mt-12 sm:mt-0">
+        <div
+          class="flex xl:flex xl:flex-row flex-col gap-12 sm:gap-8 md:grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 mt-12 sm:mt-0"
+        >
           <ul class="flex flex-col gap-3 text-white uppercase footer-list">
             <li>
               <h6 class="text-nowrap text-white uppercase">LINK PRINCIPALES</h6>
@@ -104,13 +106,13 @@ const noticias = (await getCollection("noticias")).sort(
           </ul>
           <ul class="flex flex-col gap-3 text-white uppercase footer-list">
             <li>
-              <h6 class="text-white uppercase">Noticias recientes</h6>
+              <h6 class="text-white uppercase">avisos recientes</h6>
             </li>
             {
-              noticias.slice(0, 4).map((noticia) => (
+              avisos.slice(0, 4).map((noticia) => (
                 <li>
                   <a
-                    href={`/noticias/${noticia.id}/`}
+                    href={`/avisos/${noticia.id}/`}
                     target="_blank"
                     class="line-clamp-1"
                   >
