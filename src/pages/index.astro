@@ -46,14 +46,14 @@ const carrerasRandom = mezclarArreglo([...carreras]);
 >
   <Hero />
   <main>
-    <section id="avisos" class="mx-auto pt-14 container">
+    <section id="avisos" class="mx-auto container">
       <div class="text-center">
         <h2>Avisos importantes</h2>
         <p class="text-[18px]">
           Avisos importantes para personal y estudiantes <b>UNEFM</b>
         </p>
         <ul
-          class="gap-8 grid grid-cols-2 md:grid-cols-3 2xl:grid-cols-6 mt-12 w-full avisos"
+          class="gap-8 grid grid-cols-2 md:grid-cols-3 2xl:grid-cols-6 w-full avisos"
         >
           {
             avisos.slice(0, 6).map((aviso) => (
@@ -95,7 +95,7 @@ const carrerasRandom = mezclarArreglo([...carreras]);
       </div>
     </section>
 
-    <section id="info" class="mt-12 md:mt-0">
+    <section id="info" class="-mt-12">
       <div
         class="gap-24 grid grid-cols-1 md:grid-cols-2 mx-auto py-[5%] container"
       >

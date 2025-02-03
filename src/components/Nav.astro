@@ -1,0 +1,150 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+
+export const menu = [
+  {
+    title: "Inicio",
+    link: "/",
+    target: "none",
+  },
+  {
+    title: "Sobre nosotros",
+    link: "#",
+    target: "none",
+    submenu: [
+      {
+        title: "Nosotros",
+        link: "/nosotros",
+        target: "none",
+      },
+      {
+        title: "Misión y visión",
+        link: "/mision-vision",
+        target: "none",
+      },
+    ],
+  },
+  {
+    title: "intranet",
+    link: "#",
+    target: "none",
+    submenu: [
+      {
+        title: "ADI",
+        link: "https://mundoadi.net/pregrado/",
+        target: "blank",
+      },
+      {
+        title: "nómina",
+        link: "http://nomina.unefm.edu.ve/",
+        target: "blank",
+      },
+      {
+        title: "fondo editorial",
+        link: "https://unefm.net/editorial/",
+        target: "blank",
+      },
+      {
+        title: "control de estudios",
+        link: "http://estudiantes.unefm.edu.ve/",
+        target: "blank",
+      },
+    ],
+  },
+  {
+    title: "Noticias",
+    link: "/noticias",
+    target: "none",
+  },
+  {
+    title: "Avisos",
+    link: "/avisos",
+    target: "none",
+  },
+];
+---
+
+<nav>
+  <ul>
+    {
+      menu.map((item) => (
+        <li>
+          <HeaderLink href={item.link} target={item.target}>
+            {item.title}
+          </HeaderLink>
+          {item.submenu && (
+            <ul>
+              {item.submenu.map((subItem) => (
+                <li>
+                  <HeaderLink href={subItem.link} target={subItem.target}>
+                    {subItem.title}
+                  </HeaderLink>
+                </li>
+              ))}
+            </ul>
+          )}
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+
+<style>
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding: 10px 0px;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  nav ul li {
+    position: relative;
+  }
+
+  nav ul li ul {
+    opacity: 0; /* Inicialmente invisible */
+    visibility: hidden; /* Oculta el submenú */
+    position: absolute;
+    top: 120%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    gap: 0;
+    box-shadow: 10px 10px 8px 0px rgba(0, 0, 0, 0.14);
+    -webkit-box-shadow: 10px 10px 8px 0px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 10px 10px 8px 0px rgba(0, 0, 0, 0.14);
+    transition:
+      opacity 0.3s ease,
+      visibility 0.3s ease; /* Transición suave */
+  }
+
+  nav ul li:hover ul {
+    opacity: 1; /* Hace visible el submenú */
+    visibility: visible; /* Muestra el submenú */
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    color: #797979;
+    text-wrap: nowrap;
+    position: relative; /* Necesario para posicionar el ::before */
+  }
+
+  nav ul li a:hover::before {
+    width: 100%; /* Ancho completo al hacer hover */
+  }
+
+  nav ul li a:hover {
+    color: var(--accent);
+  }
+</style>

@@ -38,7 +38,7 @@ const isActive = href === pathname || href === "/" + (subpath?.[0] || "");
   }
 
   a.active {
-    color: #163aa5;
+    color: #163aa5 !important;
     font-weight: bold;
   }
 
@@ -46,7 +46,7 @@ const isActive = href === pathname || href === "/" + (subpath?.[0] || "");
     transition: 0.2s all;
     content: "";
     position: absolute;
-    width: 80%;
+    width: 100%;
     height: 2px;
     bottom: 0px;
     left: 50%;

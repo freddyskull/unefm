@@ -3,6 +3,7 @@ import { SITE_TITLE, socialMedia } from "../consts";
 import InstagramIcon from "../icons/InstagramIcon.astro";
 import FacebookIcon from "../icons/FacebookIcon.astro";
 import TwitterIcon from "../icons/TwitterIcon.astro";
+import Icon from "./Icons";
 ---
 
 <div
@@ -125,11 +126,14 @@ import TwitterIcon from "../icons/TwitterIcon.astro";
     <div class="mx-auto container">
       <div class="grid grid-cols-1 sm:grid-cols-2">
         <div class="sm:flex items-center hidden text-[13px] text-white">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam
-          accusantium ratione
+          <Icon name={"MapPin"} size={20} color="white" />
+          <span class="ml-1">
+            Calle norte, entra Av. Manaure y calle Toledo
+          </span>
         </div>
         <div class="flex justify-center sm:justify-end items-center">
           <img
+            width="200"
             src="/ministerio.svg"
             alt="Ministerio del poder popular para la educación"
           />

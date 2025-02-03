@@ -36,18 +36,22 @@ export const menu = [
       {
         title: "ADI",
         link: "https://mundoadi.net/pregrado/",
+        target: "blank",
       },
       {
         title: "nómina",
         link: "http://nomina.unefm.edu.ve/",
+        target: "blank",
       },
       {
         title: "fondo editorial",
         link: "https://unefm.net/editorial/",
+        target: "blank",
       },
       {
         title: "control de estudios",
         link: "http://estudiantes.unefm.edu.ve/",
+        target: "blank",
       },
     ],
   },

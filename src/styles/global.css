@@ -37,6 +37,10 @@ a {
   padding: 0;
 }
 
+section {
+  padding: 4rem 0px;
+}
+
 h1,
 h2,
 h3,
