@@ -4,6 +4,10 @@ import InstagramIcon from "../icons/InstagramIcon.astro";
 import FacebookIcon from "../icons/FacebookIcon.astro";
 import TwitterIcon from "../icons/TwitterIcon.astro";
 import Icon from "./Icons";
+import { getCollection } from "astro:content";
+const noticias = (await getCollection("noticias")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
 ---
 
 <div
@@ -47,24 +51,22 @@ import Icon from "./Icons";
         </div>
       </div>
       <div class="sm:block flex justify-center sm:w-[40%]">
-        <div
-          class="gap-12 sm:gap-2 grid grid-cols-1 sm:grid-cols-3 mt-12 sm:mt-0"
-        >
+        <div class="flex gap-12 sm:gap-8 sm:grid-cols-3 mt-12 sm:mt-0">
           <ul class="flex flex-col gap-3 text-white uppercase footer-list">
             <li>
-              <h6 class="text-white uppercase">LINK PRINCIPALES</h6>
+              <h6 class="text-nowrap text-white uppercase">LINK PRINCIPALES</h6>
             </li>
             <li>
               <a href="/">Inicio</a>
             </li>
             <li>
-              <a href="/">Sobre nosotros</a>
+              <a href="/nosotros">Sobre nosotros</a>
             </li>
             <li>
-              <a href="/">Contacto</a>
+              <a href="/mision-vision">Misión y visión</a>
             </li>
             <li>
-              <a href="/">Misión y visión</a>
+              <a href="/contacto">Contacto</a>
             </li>
           </ul>
           <ul class="flex flex-col gap-3 text-white uppercase footer-list">
@@ -72,42 +74,51 @@ import Icon from "./Icons";
               <h6 class="text-white uppercase">Intranet</h6>
             </li>
             <li>
-              <a href="https://mundoadi.net/pregrado/" target="_blank">ADI</a>
-            </li>
-            <li>
-              <a href="http://nomina.unefm.edu.ve/" target="_blank">Nómina</a>
-            </li>
-            <li>
-              <a href="https://unefm.net/editorial/" target="_blank"
-                >Fondo editorial</a
+              <a
+                href="https://mundoadi.net/pregrado/"
+                class="text-nowrap"
+                target="_blank">ADI</a
               >
             </li>
             <li>
-              <a href="http://estudiantes.unefm.edu.ve/" target="_blank"
-                >Control de estudios</a
+              <a
+                href="http://nomina.unefm.edu.ve/"
+                class="text-nowrap"
+                target="_blank">Nómina</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://unefm.net/editorial/"
+                class="text-nowrap"
+                target="_blank">Fondo editorial</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://estudiantes.unefm.edu.ve/"
+                class="text-nowrap"
+                target="_blank">Control de estudios</a
               >
             </li>
           </ul>
           <ul class="flex flex-col gap-3 text-white uppercase footer-list">
             <li>
-              <h6 class="text-white uppercase">Intranet</h6>
+              <h6 class="text-white uppercase">Noticias recientes</h6>
             </li>
-            <li>
-              <a href="https://mundoadi.net/pregrado/" target="_blank">ADI</a>
-            </li>
-            <li>
-              <a href="http://nomina.unefm.edu.ve/" target="_blank">Nómina</a>
-            </li>
-            <li>
-              <a href="https://unefm.net/editorial/" target="_blank"
-                >Fondo editorial</a
-              >
-            </li>
-            <li>
-              <a href="http://estudiantes.unefm.edu.ve/" target="_blank"
-                >Control de estudios</a
-              >
-            </li>
+            {
+              noticias.slice(0, 4).map((noticia) => (
+                <li>
+                  <a
+                    href={`/noticias/${noticia.id}/`}
+                    target="_blank"
+                    class="line-clamp-1"
+                  >
+                    {noticia.data.title}
+                  </a>
+                </li>
+              ))
+            }
           </ul>
         </div>
       </div>
