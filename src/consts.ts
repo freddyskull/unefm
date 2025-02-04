@@ -14,24 +14,29 @@ export const menu = [
   {
     title: "Inicio",
     link: "/",
+    target: "none",
   },
   {
     title: "Sobre nosotros",
     link: "#",
+    target: "none",
     submenu: [
       {
         title: "Nosotros",
         link: "/nosotros",
+        target: "none",
       },
       {
         title: "Misión y visión",
         link: "/mision-vision",
+        target: "none",
       },
     ],
   },
   {
     title: "intranet",
     link: "#",
+    target: "none",
     submenu: [
       {
         title: "ADI",
@@ -58,9 +63,11 @@ export const menu = [
   {
     title: "Noticias",
     link: "/noticias",
+    target: "none",
   },
   {
     title: "Avisos",
     link: "/avisos",
+    target: "none",
   },
 ];

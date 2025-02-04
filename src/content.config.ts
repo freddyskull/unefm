@@ -35,8 +35,11 @@ const carreras = defineCollection({
     title: z.string(),
     description: z.string(),
     nivel: z.string(),
-    curso:z.string(),
+    curso: z.string(),
+    area: z.string().optional(),
     icon: z.string().optional(),
+    ubicacion: z.string().optional(),
+    color: z.string().default("#a5a5a5"),
   }),
 });
 

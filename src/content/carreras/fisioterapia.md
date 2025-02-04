@@ -1,10 +1,12 @@
 ---
-title: 'Música'
-description: 'carrera universitaria que forma profesionales con conocimientos en la teoría y aplicación del arte musical'
+title: 'PNF en Fisioterapia'
+description: 'enfermeria'
 nivel: 'Licenciatura'
 curso: 'pregado'
-icon: 'Music'
-color: '#4a148c'
+icon: 'Bone'
+color: '#9c27b0'
+area: 'ciecias de la salud'
+ubicacion: "Municipio Miranda"
 ---
 
 La Licenciatura en Música es una carrera universitaria que forma profesionales con conocimientos en la teoría y aplicación del arte musical. Los licenciados en música pueden desempeñarse como intérpretes, compositores, investigadores, arreglistas, directores, y promotores musicales. 
@@ -12,3 +14,5 @@ La Licenciatura en Música es una carrera universitaria que forma profesionales 
 Algunas de las áreas de especialización de la Licenciatura en Música son: Composición, Musicología, Teoría y literatura musical, Dirección coral, Ejecución instrumental. 
 
 Los licenciados en música pueden trabajar en: Orquestas profesionales, Ensambles vocales e instrumentales, Teatros, Conservatorios, Instituciones de educación superior. 
+
+
