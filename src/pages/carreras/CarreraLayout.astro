@@ -80,17 +80,17 @@ const { title, description, nivel, curso, icon, color, area, ubicacion } =
 </style>
 <Layout>
   <main class="mx-auto mt-12">
-    <div class="container mx-auto">
-      <div class="flex justify-center items-center flex-col text-center">
+    <div class="mx-auto container">
+      <div class="flex flex-col justify-center items-center text-center">
         <div transition:name={`icon-${icon}`}>
           <Icon name={icon} size={150} color={color} />
         </div>
-        <h1 class="uppercase mt-4" transition:name={`title-${title}`}>
+        <h1 class="mt-4 uppercase" transition:name={`title-${title}`}>
           {title}
         </h1>
       </div>
       <div
-        class="grid grid-cols-1 sm:grid-cols-2 md:flex gap-4 uppercase text-sm md:justify-center mt-2"
+        class="md:flex md:justify-center gap-4 grid grid-cols-1 sm:grid-cols-2 mt-2 text-sm uppercase"
       >
         <div>
           <span><b>Nivel: </b> {nivel}</span>

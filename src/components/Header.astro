@@ -1,6 +1,5 @@
 ---
-import HeaderLink from "./HeaderLink.astro";
-import { SITE_TITLE, socialMedia, menu } from "../consts";
+import { SITE_TITLE, socialMedia } from "../consts";
 import InstagramIcon from "../icons/InstagramIcon.astro";
 import FacebookIcon from "../icons/FacebookIcon.astro";
 import TwitterIcon from "../icons/TwitterIcon.astro";
@@ -61,21 +60,8 @@ import Nav from "./Nav.astro";
       </div>
       <div class="flex items-center gap-4">
         <nav class="xl:flex gap-8 hidden">
-          <!-- <ul
-            class="flex justify-end items-center gap-8 w-full uppercase links-nav"
-          >
-            {
-              menu.map((item) => (
-                <li>
-                  <HeaderLink href={item.link} class="text-md hover:text-link">
-                    {item.title}
-                  </HeaderLink>
-                </li>
-              ))
-            }
-          </ul> -->
           <Nav />
-          <a href="/#cursos">
+          <a href="/carreras">
             <button class="btn-outline">Ofertas académicas </button>
           </a>
         </nav>

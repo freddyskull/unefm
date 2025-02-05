@@ -8,7 +8,6 @@ const carreras = await getCollection("carreras");
 
 <style>
   main {
-    max-width: 960px;
     margin-bottom: 120px;
   }
   .title {
@@ -81,7 +80,7 @@ const carreras = await getCollection("carreras");
 </style>
 <Layout>
   <main class="mx-auto mt-12 container">
-    <section class="grid grid-cols-3 gap-8">
+    <section class="gap-8 grid grid-cols-4">
       {
         carreras.map((item: any) => (
           <Carreras

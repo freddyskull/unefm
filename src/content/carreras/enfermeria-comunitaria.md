@@ -1,18 +1,10 @@
 ---
 title: 'PNF en Enfermería Integral Comunitaria'
-description: 'enfermeria'
+description: 'Formación de enfermeros con enfoque en la atención primaria y comunitaria.'
 nivel: 'Licenciatura'
 curso: 'pregrado'
 icon: 'Accessibility'
 color: '#2196f3'
-area: 'ciecias de la salud'
-ubicacion: "Municipio Miranda"
+area: 'ciencias de la salud'
+ubicacion: 'Municipio Miranda, Municipio Mauroa, Silva'
 ---
-
-La Licenciatura en Música es una carrera universitaria que forma profesionales con conocimientos en la teoría y aplicación del arte musical. Los licenciados en música pueden desempeñarse como intérpretes, compositores, investigadores, arreglistas, directores, y promotores musicales. 
-
-Algunas de las áreas de especialización de la Licenciatura en Música son: Composición, Musicología, Teoría y literatura musical, Dirección coral, Ejecución instrumental. 
-
-Los licenciados en música pueden trabajar en: Orquestas profesionales, Ensambles vocales e instrumentales, Teatros, Conservatorios, Instituciones de educación superior. 
-
-

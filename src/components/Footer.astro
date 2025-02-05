@@ -8,6 +8,9 @@ import { getCollection } from "astro:content";
 const avisos = (await getCollection("avisos")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
+const noticias = (await getCollection("noticias")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
 ---
 
 <div
@@ -17,9 +20,9 @@ const avisos = (await getCollection("avisos")).sort(
   }}
 >
   <div class="mx-auto container">
-    <div class="flex sm:flex-row flex-col">
+    <div class="flex sm:flex-row flex-col gap-8">
       <div class="sm:w-[30%]">
-        <div class="flex flex-col items-center md:items-start logo">
+        <div class="flex flex-col items-center md:items-start">
           <a href="/">
             <img src="/logoInverse.png" class="w-[15rem]" alt={SITE_TITLE} />
           </a>
@@ -125,12 +128,29 @@ const avisos = (await getCollection("avisos")).sort(
         </div>
       </div>
       <div class="sm:block hidden sm:w-[30%] text-white">
-        <h5 class="text-white">Lorem ipsum dolor sit amet, consectetur</h5>
+        <h6 class="text-white uppercase">Últimas noticias</h6>
         <p class="mt-4">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-          tempora quas a at eos. Esse magni autem maxime, impedit consequatur
-          molestiae reprehenderit nobis nihil quaerat, amet rerum corporis animi
-          culpa.
+          {
+            noticias.slice(0, 3).map((item) => (
+              <div class="flex items-center gap-4 my-2">
+                <div class="">
+                  <a href={`/noticias/${item.id}`}>
+                    <div
+                      class={`bg-slate-300 bg-cover rounded-md w-[90px] h-[60px]`}
+                      style={{
+                        backgroundImage: `url('${item.data.heroImage}')`,
+                      }}
+                    />
+                  </a>
+                </div>
+                <div class="">
+                  <a href={`/noticias/${item.id}`}>
+                    <p class="line-clamp-2 text-sm">{item.data.title}</p>
+                  </a>
+                </div>
+              </div>
+            ))
+          }
         </p>
       </div>
     </div>

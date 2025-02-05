@@ -3,7 +3,7 @@ import Layout from "../layouts/layout.astro";
 import HeaderLink from "../components/HeaderLink.astro";
 import Hero from "../components/hero/Hero.astro";
 import Carreras from "../components/Carreras.astro";
-import carreras from "../content/carrerasList.json";
+
 import Icon from "../components/Icons";
 import { getCollection } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
@@ -15,17 +15,12 @@ const noticias = (await getCollection("noticias")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 
+const carreras = await getCollection("carreras");
+
 const cloneNotices = [...noticias];
 cloneNotices.shift();
 const noticiasList = cloneNotices;
-function mezclarArreglo(arr: any) {
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
-}
-const carrerasRandom = mezclarArreglo([...carreras]);
+const carrerasRandom = carreras.sort(() => Math.random() - 0.5);
 ---
 
 <style>
@@ -121,10 +116,6 @@ const carrerasRandom = mezclarArreglo([...carreras]);
               donde cada estudiante pueda alcanzar su máximo potencial.
             </p>
           </div>
-          <!-- <div class="flex justify-between items-center mt-8">
-              <span class="font-bold">Lorem ipsum dolor</span>
-              <button class="btn">Probar ahora</button>
-            </div> -->
         </div>
         <div>
           <img src="/homeSection1.png" alt="graduados" />
@@ -141,11 +132,18 @@ const carrerasRandom = mezclarArreglo([...carreras]);
           {
             carrerasRandom.slice(0, 8).map((item: any) => (
               <Carreras
-                title={item.carrera}
-                nivel={item.nivel}
-                curso={item.curso}
+                title={item.data.title}
+                nivel={item.data.nivel}
+                curso={item.data.curso}
+                id={item.id}
               >
-                <Icon name={item.icon} size={60} color={item.color} />
+                <div transition:name={`icon-${item.data.icon}`}>
+                  <Icon
+                    name={item.data.icon}
+                    size={60}
+                    color={item.data.color}
+                  />
+                </div>
               </Carreras>
             ))
           }
@@ -241,7 +239,7 @@ const carrerasRandom = mezclarArreglo([...carreras]);
                   <div
                     class="bottom-10 md:bottom-12 left-5 md:left-12 absolute mr-4 md:mr-0 2xl:w-[30rem]"
                   >
-                    <h4 class="text-white">
+                    <h4 class="line-clamp-2 text-white">
                       {noticias[0].data.title}
                     </h4>
                     <p class="text-slate-200">

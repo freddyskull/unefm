@@ -1,19 +1,10 @@
 ---
-title: 'enfermeria'
-description: 'enfermeria'
-nivel: 'Licenciatura'
-curso: 'pregado'
-icon: 'Cross'
-color: '#f44336'
-area: 'ciecias de la salud'
-ubicacion: "Anexo Van Griecken"
+title: 'Ingeniería Biomédica'
+description: 'Formación de ingenieros especializados en el diseño y mantenimiento de equipos médicos y tecnologías de salud.'
+nivel: 'T.S.U. | Licenciatura'
+curso: 'pregrado'
+icon: 'Computer'
+color: '#3f51b5'
+area: 'ciencias de la salud'
+ubicacion: 'Edif. Santa Ana, Van Griecken, Maracay Edo. Aragua'
 ---
-
-
-La Licenciatura en Música es una carrera universitaria que forma profesionales con conocimientos en la teoría y aplicación del arte musical. Los licenciados en música pueden desempeñarse como intérpretes, compositores, investigadores, arreglistas, directores, y promotores musicales. 
-
-Algunas de las áreas de especialización de la Licenciatura en Música son: Composición, Musicología, Teoría y literatura musical, Dirección coral, Ejecución instrumental. 
-
-Los licenciados en música pueden trabajar en: Orquestas profesionales, Ensambles vocales e instrumentales, Teatros, Conservatorios, Instituciones de educación superior. 
-
-
