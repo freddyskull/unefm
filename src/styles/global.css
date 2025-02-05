@@ -222,3 +222,56 @@ hr {
   border: 1px solid #ebebeb;
   border-radius: 100px;
 }
+
+.mobile-menu-button {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  margin-top: 45px;
+}
+
+.mobile-menu.open {
+  display: block;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu ul li {
+  padding: 0;
+}
+
+.mobile-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 10px 20px;
+}
+
+.mobile-menu ul li a:hover {
+  background-color: #f0f0f0;
+}
+
+.mobile-menu ul li ul {
+  margin-left: 20px; /* Indentación para submenús */
+  border-left: 2px solid #ddd; /* Borde izquierdo para submenús */
+}
+
+.mobile-menu ul li ul li a {
+  padding-left: 30px; /* Ajuste de padding para submenús */
+}

@@ -1,5 +1,11 @@
 ---
+// Importa los valores de las props
 const { title, nivel, curso, id } = Astro.props;
+
+// Verifica la ruta actual
+const currentPath = Astro.site.pathname;
+const basePath = currentPath.includes("/carreras") ? "" : "/carreras";
+const href = `${basePath}/${id}`;
 ---
 
 <style>
@@ -11,7 +17,7 @@ const { title, nivel, curso, id } = Astro.props;
   }
 </style>
 
-<a href={`carreras/${id}`}>
+<a href={href}>
   <div
     class="flex flex-col justify-center items-center border-2 bg-white shadow-md py-6 p-4 rounded-md h-[250px] box"
   >
