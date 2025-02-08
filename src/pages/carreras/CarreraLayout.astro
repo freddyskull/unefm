@@ -90,22 +90,30 @@ const { title, description, nivel, curso, icon, color, area, ubicacion } =
         </h1>
       </div>
       <div
-        class="md:flex md:justify-center gap-4 grid grid-cols-1 sm:grid-cols-2 mt-2 text-sm uppercase"
+        class="md:flex md:justify-between gap-4 grid grid-cols-1 sm:grid-cols-2 mt-2 text-sm uppercase"
       >
-        <div>
+        <div class="text-nowrap">
           <span><b>Nivel: </b> {nivel}</span>
         </div>
-        <div>
+        <div class="text-nowrap">
           <span><b>Cursos: </b> {curso}</span>
         </div>
-        <div>
+        <div class="text-nowrap">
           <span><b>Area: </b> {area}</span>
         </div>
-        <div>
+        <div class="max-w-[350px]">
           <span><b>Ubicacion: </b>{ubicacion}</span>
         </div>
       </div>
-      <div class="mt-8">
+      <div class="flex justify-center gap-4 mt-8">
+        <button class="btn-outline" onclick="window.history.back();"
+          >Volver atras</button
+        >
+        <a href="/carreras">
+          <button class="btn-outline">Ver carreras</button>
+        </a>
+      </div>
+      <div class="mt-12 carreras-layout">
         <slot />
       </div>
     </div>

@@ -275,3 +275,25 @@ hr {
 .mobile-menu ul li ul li a {
   padding-left: 30px; /* Ajuste de padding para submenús */
 }
+
+.carreras-layout h1 {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin: 20px 0px;
+}
+.carreras-layout h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 20px 0px;
+}
+.carreras-layout ul li {
+  list-style-type: circle;
+  color: #2c3e50; /* Color del texto */
+  font-size: 16px; /* Tamaño del texto */
+  margin: 5px 0px;
+  margin-left: 40px;
+}
+
+.carreras-layout ul li strong {
+  color: var(--accent-dark);
+}

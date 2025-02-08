@@ -1,4 +1,5 @@
 ---
+import Icon from "../components/Icons";
 import Layout from "../layouts/layout.astro";
 ---
 
@@ -7,37 +8,41 @@ import Layout from "../layouts/layout.astro";
   description="Universidad nacional experimental Francisco de miranda"
 >
   <section class="mx-auto pt-24 container">
-    <div
-      class="block bg-[url(/rectorado.jpg)] bg-slate-400 bg-cover bg-center rounded-md w-[100%] h-[600px]"
-    >
+    <div class="text-center">
+      <h1>CONTACTO</h1>
     </div>
-    <div class="flex flex-col justify-center">
-      <h4>MISIÓN</h4>
-      <p>
-        Corresponde a la Universidad Nacional Experimental Francisco de Miranda,
-        como institución de educación universitaria de carácter Experimental,
-        generar conocimientos, formar integralmente ciudadanos Conscientes,
-        responsables y emprendedores, anticipar y aportar respuestas a las
-        necesidades de la comunidad falconiana y del país en general, a través
-        de programas académicos innovadores que articulen el conocimiento
-        Científico, tecnológico, social y humanístico, para el fortalecimiento
-        de la ciencia, la tecnología, la cultura, el medio ambiente y el fomento
-        de valores morales, éticos, estéticos, espirituales y ciudadanos,
-        contribuyendo al logro de una mejor calidad de vida y un desarrollo
-        sustentable.
-      </p>
-      <h4>VISIÓN</h4>
-      <p>
-        Ser considerada la institución rectora de la Educación Universitaria en
-        el Estado Falcón, integrada al Sistema Nacional de Educación y a redes
-        académicas y de producción, comprometida y vinculada con la comunidad en
-        el estudio y solución de sus problemas; reconocida nacional e
-        internacionalmente por su excelencia académica, sustentada en la
-        innovación, el ejercicio del pensamiento crítico, la capacidad para 7
-        Transformarse y transformar a la sociedad, la preservación y promoción
-        de la Cultura y la formación de ciudadanos para el trabajo, la
-        producción intelectual y el disfrute pleno de una existencia digna.
-      </p>
+    <div class="gap-12 grid grid-cols-1 md:grid-cols-2 mt-12">
+      <div>
+        <img
+          src="/unefmMap.png"
+          alt="Mapa Unefm"
+          class="shadow-md rounded-md"
+        />
+      </div>
+      <div class="flex flex-col justify-center xl:w-[400px]">
+        <span class="uppercase">Dirección</span>
+        <h4 class="mt-4 text-link">
+          Calle Norte Entre Manaure y, C. Toledo, Coro 4101, Falcón
+        </h4>
+        <span class="my-4"
+          ><b>Horario de trabajo:</b> lunes - jueves: 8 AM - 12 PM</span
+        >
+        <div class="mt-2">
+          <ul>
+            <li class="flex items-center gap-4 my-4">
+              <Icon name="Mail" color="#4169E1" size={35} />
+              <a href="" class="font-bold text-link text-xl"
+                >correo@correo.com</a
+              >
+            </li>
+            <li class="flex items-center gap-4">
+              <Icon name="Phone" color="#4169E1" size={35} />
+              <a href="" class="font-bold text-link text-xl">+58 333 333 3333</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 </Layout>
