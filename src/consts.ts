@@ -14,60 +14,60 @@ export const menu = [
   {
     title: "Inicio",
     link: "/",
-    target: "none",
+    target: "_self",
   },
   {
     title: "Sobre nosotros",
     link: "#",
-    target: "none",
+    target: "_self",
     submenu: [
       {
         title: "Nosotros",
         link: "/nosotros",
-        target: "none",
+        target: "_self",
       },
       {
         title: "Misión y visión",
         link: "/mision-vision",
-        target: "none",
+        target: "_self",
       },
     ],
   },
   {
     title: "intranet",
     link: "#",
-    target: "none",
+    target: "_self",
     submenu: [
       {
         title: "ADI",
         link: "https://mundoadi.net/pregrado/",
-        target: "blank",
+        target: "_blank",
       },
       {
         title: "nómina",
         link: "http://nomina.unefm.edu.ve/",
-        target: "blank",
+        target: "_blank",
       },
       {
         title: "fondo editorial",
         link: "https://unefm.net/editorial/",
-        target: "blank",
+        target: "_blank",
       },
       {
         title: "control de estudios",
         link: "http://estudiantes.unefm.edu.ve/",
-        target: "blank",
+        target: "_blank",
       },
     ],
   },
   {
     title: "Noticias",
     link: "/noticias",
-    target: "none",
+    target: "_self",
   },
   {
     title: "Avisos",
     link: "/avisos",
-    target: "none",
+    target: "_self",
   },
 ];
