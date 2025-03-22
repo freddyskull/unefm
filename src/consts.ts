@@ -1,6 +1,8 @@
 // Place any global data in this file.
 // You can import this data from anywhere in your site by using the `import` keyword.
 
+import { Target } from "lucide-react";
+
 export const SITE_TITLE = "UNEFM";
 export const SITE_DESCRIPTION =
   "Universidad Nacional Experimental Francisco de Miranda";
@@ -56,6 +58,11 @@ export const menu = [
       {
         title: "control de estudios",
         link: "http://estudiantes.unefm.edu.ve/",
+        target: "_blank",
+      },
+      {
+        title: "dirección de planificacion",
+        link: "http://planificacion.unefm.edu.ve/",
         target: "_blank",
       },
     ],
