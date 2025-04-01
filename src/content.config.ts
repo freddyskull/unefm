@@ -32,13 +32,11 @@ const avisos = defineCollection({
 const carreras = defineCollection({
   loader: glob({ base: "./src/content/carreras", pattern: "**/*.{md,mdx}" }),
   schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    nivel: z.string(),
-    curso: z.string(),
-    area: z.string().optional(),
+    nombre_carrera: z.string(),
+    titulo: z.string(),
+    duracion: z.string().optional(),
     icon: z.string().optional(),
-    ubicacion: z.string().optional(),
+    lugar: z.string().optional(),
     color: z.string().default("#a5a5a5"),
   }),
 });

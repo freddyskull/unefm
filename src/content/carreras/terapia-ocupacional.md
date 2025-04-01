@@ -1,54 +1,39 @@
 ---
-title: 'PNF en Terapia Ocupacional'
-description: 'Formación de terapeutas ocupacionales para la rehabilitación y mejora de la calidad de vida de pacientes.'
-nivel: 'Licenciatura'
-curso: 'pregrado'
-icon: 'AccessibilityIcon'
-color: '#cddc39'
-area: 'ciencias de la salud'
-ubicacion: 'Municipio Miranda'
----
-
-## Descripción General
-El **Programa Nacional de Formación (PNF) en Terapia Ocupacional** está diseñado para formar profesionales capacitados para promover, mejorar y mantener la capacidad de las personas para realizar actividades diarias y ocupacionales. Los terapeutas ocupacionales trabajan con personas de todas las edades que tienen dificultades para realizar actividades de la vida diaria debido a discapacidades físicas, mentales, emocionales o sociales.
-
+nombre_carrera: "TERAPIA OCUPACIONAL"
+titulo: 
+  - "Licenciado(a) en Terapia Ocupacional"
+  - "Técnico Superior Universitario en Terapia Ocupacional"
+duracion: 
+  - "Licenciatura: 4 años"
+  - "TSU: 3 años"
+lugar: "Municipio Miranda"
+color: "#336699" # Tono único
+icon: "Activity" # Ícono de Lucide React
 ---
 
 ## Perfil del Egresado
-El egresado del PNF en Terapia Ocupacional es un profesional con habilidades para:
-- Evaluar y diagnosticar las necesidades ocupacionales de los pacientes.
-- Diseñar e implementar programas de rehabilitación y terapia ocupacional.
-- Promover la prevención de discapacidades y la mejora de la calidad de vida.
-- Colaborar con otros profesionales de la salud para ofrecer un cuidado integral.
-- Fomentar la educación y la sensibilización sobre la importancia de la terapia ocupacional.
 
----
+### Licenciado(a) en Terapia Ocupacional
+El Licenciado(a) en Terapia Ocupacional ofrece conocimientos y promueve el desarrollo de actitudes, habilidades y destrezas para abordar con sentido crítico la salud desde la ocupación y la atención a las personas en desventaja ocupacional con o sin discapacidad de manera participativa, protagónica, solidaria, responsable, ética y moral.
 
-## Campos de Acción
-Los egresados pueden desempeñarse en:
-- **Centros de Rehabilitación**: Provisión de terapia ocupacional a pacientes con diversas discapacidades.
-- **Hospitales y Clínicas**: Atención a pacientes que requieren rehabilitación y terapia ocupacional.
-- **Instituciones Educativas**: Docencia y formación de nuevos profesionales en terapia ocupacional.
-- **Salud Pública**: Implementación de programas de prevención y promoción de la salud ocupacional.
-- **Consultorios Privados**: Atención personalizada y seguimiento de pacientes ambulatorios.
-- **Investigación**: Desarrollo de estudios y proyectos en el campo de la terapia ocupacional.
+Los participantes obtendrán además de los conocimientos del TSU información relacionada con los principios de gestión administrativa para la gerencia de los servicios de rehabilitación en los diferentes niveles de atención del sistema público nacional de salud, en el ámbito laboral, de salud ocupacional y en el ámbito escolar. Entre sus competencias están:
 
----
+- Realiza el diagnóstico y valoración del desempeño ocupacional de personas con o sin discapacidad.
+- Diseña y coordina planes y programas de salud ocupacional y desempeño ocupacional.
+- Aplica sistemas de vigilancia epidemiológica en el área del desempeño ocupacional.
+- Facilita programas de capacitación en terapia ocupacional y áreas afines.
+- Realiza investigaciones científicas relacionadas con la ocupación-salud y el bienestar.
+- Participa en equipos multidisciplinarios e intersectoriales en la elaboración de políticas públicas vinculadas al desempeño ocupacional en diferentes áreas, como salud, discapacidad, educación y deportes.
 
-## Plan de Estudios
-El plan de estudios del PNF en Terapia Ocupacional incluye áreas como:
-- **Fundamentos de Terapia Ocupacional**: Teoría y práctica de la terapia ocupacional.
-- **Evaluación y Diagnóstico Ocupacional**: Técnicas para evaluar las necesidades ocupacionales de los pacientes.
-- **Intervenciones Terapéuticas**: Diseño e implementación de programas de rehabilitación y terapia ocupacional.
-- **Salud Pública y Comunitaria**: Promoción de la salud y prevención de discapacidades a nivel comunitario.
-- **Ética y Profesionalismo**: Principios éticos y legales en la práctica de la terapia ocupacional.
-- **Prácticas Clínicas**: Experiencia práctica en entornos de atención primaria y hospitalaria.
+### Técnico Superior Universitario en Terapia Ocupacional
+El Técnico Superior Universitario en Terapia Ocupacional brinda conocimientos sobre promoción de la salud, prevención de la discapacidad, habilitación, rehabilitación e integración e inclusión. También enfatiza el uso de principios técnicos básicos de manera integral y participativa en diferentes niveles de atención en salud. El objetivo es desarrollar potencialidades para la integración en equipos multidisciplinarios, comunidades y grupos familiares, para lograr una optimización del trabajo y alcanzar los objetivos propuestos. Entre sus competencias están:
 
----
-
-## Habilidades Requeridas
-- **Conocimientos técnicos**: En diagnóstico, tratamiento y prevención de discapacidades ocupacionales.
-- **Habilidades de comunicación**: Para interactuar eficazmente con pacientes y familias.
-- **Empatía y compasión**: Para comprender y atender las necesidades emocionales y sociales de los pacientes.
-- **Pensamiento crítico**: Para desarrollar y ajustar planes de cuidado personalizados.
-- **Trabajo en equipo**: Para colaborar con otros profesionales de la salud en el cuidado integral del paciente.
+- Promueve la integración interdisciplinaria e intersectorial para la inclusión comunitaria.
+- Aplica habilidades de razonamiento clínico y toma de decisiones para resolver problemas de salud física, mental y ocupacional.
+- Valora y respeta las diferencias individuales, culturales y su influencia en la ocupación y participación.
+- Establece canales de comunicación profesional a diferentes niveles y contextos.
+- Realiza estudios e investigaciones sobre el desempeño humano y su relación con la salud y la discapacidad.
+- Diseña, ejecuta y evalúa planes de acción e intervención individual y colectiva.
+- Recopila y analiza información sobre factores protectores de la salud y riesgos para el desempeño ocupacional.
+- Diseña y adapta equipamiento para mejorar la independencia en las actividades diarias de personas con discapacidad.
+- Participa en equipos interdisciplinarios para tomar decisiones sobre adaptaciones ambientales y promover la movilidad de personas con discapacidad.

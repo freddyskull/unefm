@@ -1,56 +1,31 @@
 ---
-title: 'Medicina'
-description: 'Formación de médicos generales con conocimientos científicos y habilidades clínicas para el diagnóstico y tratamiento de enfermedades.'
-nivel: 'Licenciatura'
-curso: 'pregrado'
-icon: 'Hospital'
-color: '#e91e63'
-area: 'ciencias de la salud'
-ubicacion: 'Edif. Santa Ana, Anexo Van Griecken, Municipios: Petit, San Francisco, Monseñor Iturriza, Silva, Democracia, Federación, Carirubana, Dabajuro'
----
-
-## Descripción General
-La **Medicina** es una ciencia y práctica dedicada al diagnóstico, tratamiento y prevención de enfermedades y trastornos en los seres humanos. Los médicos son responsables de proporcionar una atención integral a los pacientes, abordando aspectos físicos, emocionales y sociales del bienestar. Esta disciplina abarca una amplia gama de especialidades y subespecialidades, cada una enfocada en diferentes áreas de la salud y el cuerpo humano.
-
+nombre_carrera: "MEDICINA"
+titulo: "Médico Cirujano"
+duracion: "12 Semestres (aprox. 6 años)"
+lugar: "Municipios: Miranda, Carirubana"
+color: "#004466" # Tono oscuro único
+icon: "Stethoscope" # Ícono de Lucide React
 ---
 
 ## Perfil del Egresado
-El médico es un profesional con habilidades para:
-- Diagnosticar y tratar una variedad de enfermedades y condiciones médicas.
-- Proveer atención médica integral y personalizada a los pacientes.
-- Coordinar con otros especialistas y profesionales de la salud para ofrecer un cuidado integral.
-- Promover la prevención y el mantenimiento de la salud a través de la educación y el empoderamiento de los pacientes.
-- Fomentar la investigación médica y la innovación en el cuidado de la salud.
 
----
+### Médico Cirujano
+El Egresado del programa de Medicina de la Universidad Nacional Experimental Francisco de Miranda, está capacitado para:
 
-## Campos de Acción
-Los médicos pueden desempeñarse en:
-- **Hospitales**: Provisión de atención médica en unidades de hospitalización, cuidado intensivo y cirugía.
-- **Consultorios Privados**: Atención personalizada y seguimiento de pacientes ambulatorios.
-- **Centros de Salud y Clínicas**: Diagnóstico y tratamiento de enfermedades comunes y crónicas.
-- **Instituciones Educativas**: Docencia y formación de nuevos profesionales en medicina.
-- **Salud Pública**: Implementación de programas de prevención y promoción de la salud.
-- **Investigación**: Desarrollo de estudios y proyectos en el ámbito de la medicina.
+a) Ejercer la profesión médica con sólida base científica, técnica y humanística, permitiéndole un desempeño legal y ético-deontológico orientado al cuidado de la salud del individuo, la familia y la comunidad, integrando equipos de salud.
 
----
+b) Ejercer una medicina integral: fomento, prevención, conservación, restitución y rehabilitación de la salud a nivel del individuo, sin distingo de edad; de la familia y de la comunidad, de manera continua y formando equipos multidisciplinarios de salud.
 
-## Plan de Estudios
-La formación en Medicina incluye áreas como:
-- **Ciencias Básicas**: Anatomía, fisiología, bioquímica y microbiología.
-- **Diagnóstico y Tratamiento**: Identificación y manejo de enfermedades complejas y crónicas.
-- **Cirugía**: Procedimientos quirúrgicos en diversas especialidades.
-- **Pediatría y Geriatría**: Atención a niños, adolescentes y adultos mayores.
-- **Salud Mental**: Evaluación y tratamiento de trastornos emocionales y psicológicos.
-- **Salud Pública y Comunitaria**: Promoción de la salud y prevención de enfermedades en la comunidad.
-- **Ética y Profesionalismo**: Principios éticos y legales en la práctica de la medicina.
-- **Prácticas Clínicas**: Experiencia práctica en entornos hospitalarios y ambulatorios.
+c) Atender la patología común en base a un diagnóstico epidemiológico, clínico y complementario preciso que le permita aplicar una terapéutica eficaz.
 
----
+d) El diagnóstico precoz y la orientación de casos de complejidad que ameriten comprobaciones diagnósticas y terapéuticas especializadas.
 
-## Habilidades Requeridas
-- **Conocimientos técnicos**: En diagnóstico, tratamiento y prevención de enfermedades.
-- **Habilidades de comunicación**: Para interactuar eficazmente con pacientes y familias.
-- **Empatía y compasión**: Para comprender y atender las necesidades emocionales y sociales de los pacientes.
-- **Pensamiento crítico**: Para desarrollar y ajustar planes de cuidado personalizados.
-- **Trabajo en equipo**: Para colaborar con otros profesionales de la salud.
+e) Establecer un diagnóstico de salud en todos los grupos etarios e identificar sus vulnerabilidades.
+
+f) El dominio de habilidades y destrezas instrumentales o no, propias de un médico general.
+
+g) Contribuir en la investigación científica en el campo biopsicosocial, al poseer una visión holística de las ciencias de la salud en su doble condición de naturales y sociales.
+
+h) Incorporarse al proceso de desarrollo del país y de manera particular, al de la comunidad que le toque servir, teniendo condiciones para asumir liderazgos para tales propósitos.
+
+i) Participar en aquellas actividades que contribuyan al fomento de condiciones sociales, morales y científicas que conlleven a un mejor desarrollo tanto de la institución donde labore como de su propio gremio.

@@ -1,63 +1,21 @@
 ---
-title: 'Desarrollo Empresarial'
-description: 'Formación de profesionales en la gestión y desarrollo de empresas.'
-nivel: 'Licenciatura'
-curso: 'pregrado'
-icon: 'ChartCandlestick'
-color: '#311b92'
-area: 'educación'
-ubicacion: 'C.A. Los Perozos, C.A. Marino Colina, Municipios: Tocópero, Dabajuro, San Francisco, Monseñor Iturriza, Bolívar, Petit, Federación, Colina, Piritu, Crirubana, Morón, Urumaco, Democracia, Falcón, Silva, Zamora, Unión, Sucre'
----
-## Descripción General
-El **Desarrollo Empresarial** es un área estratégica que se enfoca en el crecimiento y la expansión de las organizaciones mediante la identificación de oportunidades de negocio, la optimización de procesos y la creación de valor sostenible. Los profesionales en este campo trabajan en la planificación, ejecución y evaluación de estrategias que permiten a las empresas aumentar su competitividad, ingresos y participación en el mercado. Esta disciplina combina conocimientos de administración, finanzas, marketing y gestión de recursos para impulsar el éxito organizacional.
-
+nombre_carrera: "DESARROLLO EMPRESARIAL"
+titulo: "Licenciado(a) en Desarrollo Empresarial"
+duracion: "10 Semestres (5 años)"
+lugar: "Municipios: Miranda, Urumaco, Democracia, Mene Mauroa, Buchivacoa, Davajuro, Unión, Federación, Petit, Sucre, Carirubana, Colina, Zamora, Tocópero. Yaracuy, Lara, Carabobo."
+color: "#004466" # Tono oscuro único
+icon: "Briefcase" # Ícono de Lucide React
 ---
 
 ## Perfil del Egresado
-El profesional en Desarrollo Empresarial es un experto con habilidades para:
-- Identificar y aprovechar oportunidades de negocio en mercados locales e internacionales.
-- Diseñar e implementar estrategias de crecimiento y expansión empresarial.
-- Optimizar procesos operativos y financieros para mejorar la eficiencia organizacional.
-- Desarrollar alianzas estratégicas y relaciones comerciales con clientes, proveedores y socios.
-- Analizar tendencias del mercado y adaptar las estrategias empresariales a los cambios del entorno.
 
----
+### Licenciado(a) en Desarrollo Empresarial
+El Licenciado en Desarrollo Empresarial se caracteriza por ser un agente de cambio en el ámbito empresarial. Su formación le brinda las herramientas necesarias para identificar oportunidades y convertirlas en negocios exitosos. Su mentalidad creativa e innovadora le permite encontrar soluciones originales y adaptarse a un entorno empresarial en constante evolución.
 
-## Campos de Acción
-Los profesionales en Desarrollo Empresarial pueden desempeñarse en:
-- **Consultoría Empresarial**: Asesoría a empresas en estrategias de crecimiento y mejora de procesos.
-- **Gestión de Proyectos**: Planificación y ejecución de iniciativas para expandir negocios.
-- **Emprendimiento**: Creación y desarrollo de nuevas empresas o startups.
-- **Ventas y Marketing**: Diseño de estrategias para aumentar la participación en el mercado.
-- **Análisis de Mercado**: Investigación de tendencias y oportunidades comerciales.
-- **Gestión de Alianzas**: Establecimiento de colaboraciones estratégicas con otras organizaciones.
+Este profesional tiene un amplio sentido del riesgo y la competitividad, lo que le permite tomar decisiones estratégicas y asumir desafíos con confianza. Además, comprende la importancia de la asociatividad y la colaboración para el emprendimiento y el éxito empresarial, por lo que está capacitado para establecer alianzas estratégicas y trabajar en equipo.
 
----
+El Licenciado en Desarrollo Empresarial posee conocimientos sólidos en transformación social y tiene un enfoque especial en las empresas de economía social. Comprende que el conocimiento es un motor fundamental para el desarrollo económico y social, y utiliza este conocimiento como base para impulsar el crecimiento de las organizaciones.
 
-## Plan de Estudios
-La formación en Desarrollo Empresarial incluye áreas como:
-- **Estrategias de Crecimiento**: Planificación de modelos de expansión empresarial.
-- **Finanzas Corporativas**: Gestión de recursos financieros para impulsar el crecimiento.
-- **Marketing Estratégico**: Diseño de campañas y estrategias para captar clientes.
-- **Gestión de Proyectos**: Metodologías para la planificación y ejecución de iniciativas.
-- **Innovación y Emprendimiento**: Desarrollo de ideas y modelos de negocio innovadores.
-- **Análisis de Mercado**: Técnicas para identificar oportunidades y tendencias comerciales.
+Entre las competencias y actividades propias de este profesional se encuentran: la capacidad de realizar análisis de mercado y evaluar la viabilidad de proyectos empresariales, la habilidad para diseñar estrategias de negocio efectivas, la gestión eficiente de recursos y la implementación de sistemas de calidad. Además, es capaz de identificar oportunidades de financiamiento y establecer alianzas con entidades financieras y organismos gubernamentales.
 
----
-
-## Habilidades Requeridas
-- **Pensamiento estratégico**: Para diseñar planes de crecimiento a largo plazo.
-- **Habilidades analíticas**: Para evaluar datos financieros y de mercado.
-- **Creatividad e innovación**: Para identificar oportunidades únicas y soluciones disruptivas.
-- **Comunicación efectiva**: Para negociar y establecer relaciones comerciales.
-- **Liderazgo y trabajo en equipo**: Para guiar equipos y colaborar en proyectos multidisciplinarios.
-
----
-
-## Importancia del Desarrollo Empresarial
-El Desarrollo Empresarial es crucial para las organizaciones porque:
-- Permite identificar y aprovechar nuevas oportunidades de negocio.
-- Fomenta la innovación y la adaptación a los cambios del mercado.
-- Mejora la competitividad y la rentabilidad de las empresas.
-- Facilita la expansión a nuevos mercados y la diversificación de productos o servicios.
-- Contribuye al crecimiento económico y a la creación de empleo.
+El Licenciado en Desarrollo Empresarial también se involucra en la gestión de proyectos de desarrollo económico y social, promoviendo la responsabilidad social empresarial y el impacto positivo en la comunidad. Además, es capaz de liderar equipos de trabajo, fomentar el espíritu emprendedor en otros y contribuir al crecimiento económico y al bienestar social.
