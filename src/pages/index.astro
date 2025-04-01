@@ -56,8 +56,8 @@ const carrerasRandom = carreras.sort(() => Math.random() - 0.5);
                 class={`flex flex-col justify-center bg-slate-200 hover:shadow-(--box-shadow) p-4 rounded-md shadow-md transition-all ${aviso.data.destacado && "destacado"}`}
               >
                 <a href={`/avisos/${aviso.id}/`}>
-                  <h6 class="line-clamp-2 text-[15px]">{aviso.data.title}</h6>
-                  <span class="mb-2 line-clamp-2 text-sm">
+                  <h6 class="text-[15px] line-clamp-2">{aviso.data.title}</h6>
+                  <span class="mb-2 text-sm line-clamp-2">
                     {aviso.data.description}
                   </span>
                   <div class="flex justify-center gap-2">
@@ -80,12 +80,12 @@ const carrerasRandom = carreras.sort(() => Math.random() - 0.5);
           }
         </ul>
       </div>
-      <div class="md:flex justify-center gap-8 hidden mt-12">
+      <div class="hidden md:flex justify-center gap-8 mt-12">
         <a href="/avisos">
-          <button class="w-40 btn-outline">Ver avisos</button>
+          <button class="btn-outline w-40">Ver avisos</button>
         </a>
         <a href="/noticias">
-          <button class="w-40 btn-outline">Ver noticias</button>
+          <button class="btn-outline w-40">Ver noticias</button>
         </a>
       </div>
     </section>
@@ -132,9 +132,9 @@ const carrerasRandom = carreras.sort(() => Math.random() - 0.5);
           {
             carrerasRandom.slice(0, 8).map((item: any) => (
               <Carreras
-                title={item.data.title}
-                nivel={item.data.nivel}
-                curso={item.data.curso}
+                title={item.data.nombre_carrera}
+                duracion={item.data.duracion}
+                lugar={item.data.lugar}
                 id={item.id}
               >
                 <div transition:name={`icon-${item.data.icon}`}>
@@ -227,7 +227,7 @@ const carrerasRandom = carreras.sort(() => Math.random() - 0.5);
           >
             <a class="bg-red-300" href={`/noticias/${noticias[0].id}`}>
               <div
-                class="absolute inset-0 bg-cover transition-all duration-200 hover:scale-110"
+                class="absolute inset-0 bg-cover hover:scale-110 transition-all duration-200"
                 transition:name={`hero-${noticias[0].data.title}`}
                 style={{
                   backgroundImage: `url(${noticias[0].data.heroImage})`,
@@ -239,7 +239,7 @@ const carrerasRandom = carreras.sort(() => Math.random() - 0.5);
                   <div
                     class="bottom-10 md:bottom-12 left-5 md:left-12 absolute mr-4 md:mr-0 2xl:w-[30rem]"
                   >
-                    <h4 class="line-clamp-2 text-white">
+                    <h4 class="text-white line-clamp-2">
                       {noticias[0].data.title}
                     </h4>
                     <p class="text-slate-200">
@@ -266,7 +266,7 @@ const carrerasRandom = carreras.sort(() => Math.random() - 0.5);
                         <div class="relative bg-slate-400 bg-center rounded-md w-[35%] h-[150px] overflow-hidden">
                           <div
                             transition:name={`hero-${noticia.data.title}`}
-                            class="absolute inset-0 bg-cover transition-transform duration-200 hover:scale-110"
+                            class="absolute inset-0 bg-cover hover:scale-110 transition-transform duration-200"
                             style={{
                               backgroundImage: `url(${noticia.data.heroImage})`,
                             }}

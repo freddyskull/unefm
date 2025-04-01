@@ -1,9 +1,9 @@
 ---
 // Importa los valores de las props
-const { title, nivel, curso, id } = Astro.props;
+const { title, duracion, lugar, id } = Astro.props;
 
 // Verifica la ruta actual
-const currentPath = Astro.site.pathname;
+const currentPath = Astro.site?.pathname ?? "/";
 const basePath = currentPath.includes("/carreras") ? "" : "/carreras";
 const href = `${basePath}/${id}`;
 ---
@@ -15,25 +15,38 @@ const href = `${basePath}/${id}`;
   .box:hover {
     box-shadow: var(--box-shadow);
   }
+  .text-wrap {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 </style>
 
 <a href={href}>
   <div
-    class="flex flex-col justify-center items-center border-2 bg-white shadow-md py-6 p-4 rounded-md h-[250px] box"
+    class="flex flex-col justify-center items-center bg-white shadow-md p-4 py-6 border-2 rounded-md h-[250px] box"
   >
     <div class="opacity-50 my-4 mb-6">
       <slot />
     </div>
     <div class="w-full text-center">
       <h6
-        class="line-clamp-2 text-slate-600 text-sm md:text-xl 2xl:text-2xl uppercase"
+        class="text-slate-600 text-sm md:text-xl 2xl:text-2xl uppercase line-clamp-2"
         transition:name={`title-${title}`}
       >
         {title}
       </h6>
-      <div class="flex justify-between mt-4 text-sm">
-        <span><b>Nivel:</b> {nivel}</span>
-        <span><b>Curso:</b> {curso}</span>
+      <div class="gap-4 grid grid-cols-2 mt-4 text-sm">
+        <span class="flex flex-col line-clamp-2">
+          <b>Duracion</b>
+          {duracion}
+        </span>
+        <span class="flex flex-col max-h-15 line-clamp-2 text-wrap">
+          <b>Lugar</b><br />
+          {lugar}
+        </span>
       </div>
     </div>
   </div>
