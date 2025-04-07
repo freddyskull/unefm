@@ -1,19 +1,16 @@
 ---
 nombre_carrera: "INGENIERÍA BIOMÉDICA"
-titulo: 
-  - "Ingeniero Biomédico"
-  - "Técnico Superior en Electromedicina"
-duracion: 
-  - "Ingeniería: 5 años"
-  - "TSU: 3 años"
+titulo: "Ingeniero Biomédico / Técnico Superior en Electromedicina"
+duracion: "Ingeniería: 5 años / TSU: 3 años"
 lugar: "Municipios: Miranda, Girardot"
 color: "#0099CC" # Tono único para Ingeniería Biomédica
-icon: "Activity" # Ícono de Lucide React
+icon: "Computer" # Ícono de Lucide React
 ---
 
 ## Perfil del Egresado
 
 ### Ingeniero Biomédico
+
 El Ingeniero Biomédico es un profesional altamente capacitado para:
 
 - Contribuir al mejoramiento de la calidad del servicio de salud mediante la optimización de procesos, equipos y sistemas en el área de la bioingeniería.

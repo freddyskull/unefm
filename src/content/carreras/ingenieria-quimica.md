@@ -4,12 +4,13 @@ titulo: "Ingeniero Químico"
 duracion: "10 Semestres (aprox. 5 años)"
 lugar: "Municipios: Carirubana, Juan José Mora"
 color: "#004466" # Tono oscuro único
-icon: "Flask" # Ícono de Lucide React
+icon: "TestTube" # Ícono de Lucide React
 ---
 
 ## Perfil del Egresado
 
 ### Ingeniero Químico
+
 El egresado del programa de Ingeniería Química de la Universidad Nacional Experimental Francisco de Miranda, está capacitado para:
 
 a) Diseñar, manejar, optimizar, controlar y administrar procesos y proyectos para la transformación física y/o química de materias primas, a fin de obtener productos y servicios útiles al hombre, económicamente factibles.

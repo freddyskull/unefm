@@ -1,14 +1,8 @@
 ---
 nombre_carrera: "GERONTOLOGÍA"
-titulo: 
-  - "Licenciado (a) en Gerontología"
-  - "Técnico Superior en Gerontología"
-duracion: 
-  - "Ingeniería: 5 años"
-  - "TSU: 3 años"
-lugar: 
-  - "Municipio Miranda"
-  - "Municipio Dabajuro"
+titulo: "Licenciado (a) en Gerontología, Técnico Superior en Gerontología"
+duracion: "Ingeniería: 5 años / TSU: 3 años"
+lugar: "Municipio Miranda, Municipio Dabajuro"
 color: "#336699" # Tono azul único
 icon: "UserCheck" # Ícono de Lucide React
 ---
@@ -16,6 +10,7 @@ icon: "UserCheck" # Ícono de Lucide React
 ## Perfil del Egresado
 
 ### Licenciado (a) en Gerontología / Técnico Superior en Gerontología
+
 El perfil profesional con que egresa el licenciado en gerontología está integrado por cuatro grandes roles:
 
 - **Rol de investigador**: Permite planificar, incentivar y desarrollar investigaciones en el área gerontológica, para así comprender y relacionar la teoría de la biología del envejecimiento y la dinámica biopsicosocial del anciano.
@@ -24,6 +19,7 @@ El perfil profesional con que egresa el licenciado en gerontología está integr
 - **Rol de coordinador de servicios socioasistencial**: Permite promover el desarrollo de la atención integral del anciano con criterio de equidad.
 
 ### Actividades del Profesional en Gerontología
+
 Entre las actividades de los profesionales de la gerontología se encuentran:
 
 - Realizar evaluaciones exhaustivas del estado físico, mental, social y emocional de las personas mayores.

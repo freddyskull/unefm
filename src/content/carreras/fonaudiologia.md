@@ -4,12 +4,13 @@ titulo: "Licenciado (a) en Fonoaudiología / Técnico Superior Universitario en 
 duracion: "4 años"
 lugar: "Municipio Miranda"
 color: "#99ccff"
-icon: "mic" # Ícono de Lucide React
+icon: "MicVocal" # Ícono de Lucide React
 ---
 
 ## PERFIL DEL EGRESADO
 
 ### Licenciado(a) en Fonoaudiología
+
 1. Brinda asistencia profesional de calidad a personas con trastornos de la audición y comunicación.
 2. Realiza diagnósticos funcionales fonoaudiológicos y planifica intervenciones.
 3. Trabaja en promoción, prevención, detección, intervención e investigación en comunicación humana y audición.
@@ -27,6 +28,7 @@ icon: "mic" # Ícono de Lucide React
 15. Colabora en equipos multidisciplinarios y tecnológicos de salud y educación.
 
 ### TSU en Fonoaudiología
+
 1. Diagnostica y atiende alteraciones del lenguaje y habla, voz, motricidad oral y audición.
 2. Utiliza pruebas formales básicas y enfoques de rehabilitación para evaluar y tratar trastornos de la comunicación humana.
 3. Aplica normas internacionales en el área de salud de la comunicación humana.

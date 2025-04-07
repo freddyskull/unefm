@@ -1,8 +1,7 @@
 ---
 import Icon from "../../components/Icons";
 import Layout from "../../layouts/layout.astro";
-const { title, description, nivel, curso, icon, color, area, ubicacion } =
-  Astro.props;
+const { nombre_carrera, titulo, duracion, lugar, color, icon } = Astro.props;
 ---
 
 <style>
@@ -85,29 +84,23 @@ const { title, description, nivel, curso, icon, color, area, ubicacion } =
         <div transition:name={`icon-${icon}`}>
           <Icon name={icon} size={150} color={color} />
         </div>
-        <h1 class="mt-4 uppercase" transition:name={`title-${title}`}>
-          {title}
+        <h1 class="mt-4 uppercase" transition:name={`title-${nombre_carrera}`}>
+          {nombre_carrera}
         </h1>
       </div>
       <div
         class="md:flex md:justify-between gap-4 grid grid-cols-1 sm:grid-cols-2 mt-2 text-sm uppercase"
       >
         <div class="text-nowrap">
-          <span><b>Nivel: </b> {nivel}</span>
-        </div>
-        <div class="text-nowrap">
-          <span><b>Cursos: </b> {curso}</span>
-        </div>
-        <div class="text-nowrap">
-          <span><b>Area: </b> {area}</span>
+          <span><b>Duración: </b> {duracion}</span>
         </div>
         <div class="max-w-[350px]">
-          <span><b>Ubicacion: </b>{ubicacion}</span>
+          <span><b>Ubicación: </b>{lugar}</span>
         </div>
       </div>
       <div class="flex justify-center gap-4 mt-8">
         <button class="btn-outline" onclick="window.history.back();"
-          >Volver atras</button
+          >Volver atrás</button
         >
         <a href="/carreras">
           <button class="btn-outline">Ver carreras</button>

@@ -1,13 +1,8 @@
 ---
 nombre_carrera: "EDUCACIÓN MATEMÁTICA, MENCIÓN INFORMÁTICA"
-titulo: 
-  - "Licenciado(a) en Educación Matemática, mención Informática"
-duracion: 
-  - "10 Semestres (5 años)"
-lugar: 
-  - "Municipio Miranda"
-  - "Municipio Mene Mauroa"
-  - "Municipio Falcón"
+titulo: "Licenciado(a) en Educación Matemática, mención Informática"
+duracion: "10 Semestres (5 años)"
+lugar: "Municipio Miranda, Municipio Mene Mauroa, Municipio Falcón"
 color: "#993399" # Tono único
 icon: "Calculator" # Ícono de Lucide React
 ---

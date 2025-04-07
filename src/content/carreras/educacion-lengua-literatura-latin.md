@@ -1,13 +1,10 @@
 ---
 nombre_carrera: "EDUCACIÓN EN LENGUA MENCIÓN LENGUA, LITERATURA Y LATÍN"
-titulo: 
-  - "Licenciado(a) en Educación en Lenguas Extranjeras mención Inglés"
-duracion: 
-  - "10 Semestres (5 años)"
-lugar: 
-  - "Municipios: Miranda, Democracia, Dabajuro, Silva, San Francisco, Mauroa, Juan José Mora, Puerto Cabello, Veroes"
-color: "#993366" # Tono único
-icon: "BookOpen" # Ícono de Lucide React
+titulo: "Licenciado(a) en Educación en Lenguas Extranjeras mención Inglés"
+duracion: "10 Semestres (5 años)"
+lugar: "Municipios: Miranda, Democracia, Dabajuro, Silva, San Francisco, Mauroa, Juan José Mora, Puerto Cabello, Veroes"
+color: "#993366"
+icon: "BookOpen"
 ---
 
 ## Perfil del Egresado

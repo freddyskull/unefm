@@ -10,6 +10,7 @@ icon: "Briefcase" # Ícono de Lucide React
 ## Perfil del Egresado
 
 ### Licenciado(a) en Desarrollo Empresarial
+
 El Licenciado en Desarrollo Empresarial se caracteriza por ser un agente de cambio en el ámbito empresarial. Su formación le brinda las herramientas necesarias para identificar oportunidades y convertirlas en negocios exitosos. Su mentalidad creativa e innovadora le permite encontrar soluciones originales y adaptarse a un entorno empresarial en constante evolución.
 
 Este profesional tiene un amplio sentido del riesgo y la competitividad, lo que le permite tomar decisiones estratégicas y asumir desafíos con confianza. Además, comprende la importancia de la asociatividad y la colaboración para el emprendimiento y el éxito empresarial, por lo que está capacitado para establecer alianzas estratégicas y trabajar en equipo.

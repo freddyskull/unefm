@@ -83,10 +83,12 @@ const carreras = await getCollection("carreras");
     <section class="gap-8 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4">
       {
         carreras.map((item: any) => (
+          
           <Carreras
-            title={item.data.title}
-            nivel={item.data.nivel}
-            curso={item.data.curso}
+            nombre_carrera={item.data.nombre_carrera}
+            titulo={item.data.titulo}
+            duracion={item.data.duracion}
+            lugar={item.data.lugar}
             id={item.id}
           >
             <div transition:name={`icon-${item.data.icon}`}>

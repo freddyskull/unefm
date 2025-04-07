@@ -1,11 +1,7 @@
 ---
 nombre_carrera: "TERAPIA OCUPACIONAL"
-titulo: 
-  - "Licenciado(a) en Terapia Ocupacional"
-  - "Técnico Superior Universitario en Terapia Ocupacional"
-duracion: 
-  - "Licenciatura: 4 años"
-  - "TSU: 3 años"
+titulo: Licenciado(a) en Terapia Ocupacional / Técnico Superior Universitario en Terapia Ocupacional"
+duracion: "Licenciatura: 4 años / TSU: 3 años"
 lugar: "Municipio Miranda"
 color: "#336699" # Tono único
 icon: "Activity" # Ícono de Lucide React
@@ -14,6 +10,7 @@ icon: "Activity" # Ícono de Lucide React
 ## Perfil del Egresado
 
 ### Licenciado(a) en Terapia Ocupacional
+
 El Licenciado(a) en Terapia Ocupacional ofrece conocimientos y promueve el desarrollo de actitudes, habilidades y destrezas para abordar con sentido crítico la salud desde la ocupación y la atención a las personas en desventaja ocupacional con o sin discapacidad de manera participativa, protagónica, solidaria, responsable, ética y moral.
 
 Los participantes obtendrán además de los conocimientos del TSU información relacionada con los principios de gestión administrativa para la gerencia de los servicios de rehabilitación en los diferentes niveles de atención del sistema público nacional de salud, en el ámbito laboral, de salud ocupacional y en el ámbito escolar. Entre sus competencias están:
@@ -26,6 +23,7 @@ Los participantes obtendrán además de los conocimientos del TSU información r
 - Participa en equipos multidisciplinarios e intersectoriales en la elaboración de políticas públicas vinculadas al desempeño ocupacional en diferentes áreas, como salud, discapacidad, educación y deportes.
 
 ### Técnico Superior Universitario en Terapia Ocupacional
+
 El Técnico Superior Universitario en Terapia Ocupacional brinda conocimientos sobre promoción de la salud, prevención de la discapacidad, habilitación, rehabilitación e integración e inclusión. También enfatiza el uso de principios técnicos básicos de manera integral y participativa en diferentes niveles de atención en salud. El objetivo es desarrollar potencialidades para la integración en equipos multidisciplinarios, comunidades y grupos familiares, para lograr una optimización del trabajo y alcanzar los objetivos propuestos. Entre sus competencias están:
 
 - Promueve la integración interdisciplinaria e intersectorial para la inclusión comunitaria.

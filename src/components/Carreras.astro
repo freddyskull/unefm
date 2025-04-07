@@ -1,6 +1,6 @@
 ---
 // Importa los valores de las props
-const { title, duracion, lugar, id } = Astro.props;
+const { title, duracion, lugar, id, nombre_carrera } = Astro.props;
 
 // Verifica la ruta actual
 const currentPath = Astro.site?.pathname ?? "/";
@@ -36,7 +36,7 @@ const href = `${basePath}/${id}`;
         class="text-slate-600 text-sm md:text-xl 2xl:text-2xl uppercase line-clamp-2"
         transition:name={`title-${title}`}
       >
-        {title}
+        {nombre_carrera}
       </h6>
       <div class="gap-4 grid grid-cols-2 mt-4 text-sm">
         <span class="flex flex-col line-clamp-2">

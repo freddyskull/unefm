@@ -132,6 +132,7 @@ const carrerasRandom = carreras.sort(() => Math.random() - 0.5);
           {
             carrerasRandom.slice(0, 8).map((item: any) => (
               <Carreras
+                nombre_carrera={item.data.nombre_carrera}
                 title={item.data.nombre_carrera}
                 duracion={item.data.duracion}
                 lugar={item.data.lugar}
